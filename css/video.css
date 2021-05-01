@@ -1,0 +1,24 @@
+.control_video{
+    width: 100%;
+}
+
+.control_video .background  {
+    position:relative;
+    background-color:transparent;
+    width: 100%;
+    padding-bottom:56.25%;
+}
+
+.control_video .background::before {
+    position: absolute;
+    content:'';
+    display:block;
+    padding-bottom:56.25%;
+}
+
+.control_video .background .video{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}

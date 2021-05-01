@@ -1,0 +1,135 @@
+.background .control_beneficios{
+    width: 100%;
+    height: auto;
+}
+.background .control_beneficios .background{
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+}
+.background .control_beneficios .background .tabsnavbar{
+    width: 100%;
+    height: auto;
+}
+.background .control_beneficios .background .tabsnavbar .background{
+    width: 70%;
+    margin-left: 15%;
+}
+
+.lista_beneficios_candidato{
+    width: 100%;
+    font-size: 14px;
+    background-color: white;
+}
+.lista_beneficios_candidato .background{
+    width: 70% !important;
+    height: 100%;
+    margin-left: 15% !important;
+    background-color: white;
+    border-radius: 5px;
+    border-top: solid 3px #eb0064;
+}
+.lista_beneficios_empresa{
+    width: 100%;
+    font-size: 14px;
+    background-color: white;
+}
+.lista_beneficios_empresa .background{
+    width: 70% !important;
+    height: 100%;
+    margin-left: 15% !important;
+    background-color: white;
+    border-radius: 5px;
+    border-top: solid 3px #45d2da;
+}
+.item_beneficios_can{
+    height: 50px;
+    padding-top: 15px !important;
+    cursor: default;
+    transition: all 0.1s ease-in-out;
+}
+.item_beneficios_can:hover{
+    font-weight: bold;
+    padding-left: 20px;
+    color: #eb0064;
+}
+.item_beneficios_can:hover >.fa_icon_beneficios{
+    font-size: 20px;
+}
+.img_beneficios{
+    float: right;
+    margin-top: -5px;
+    width: 30px;
+    transform: scale(0);
+    transition: all 0.1s ease-in-out;
+}
+.item_beneficios_can:hover >.img_beneficios{
+    transform: scale(1);
+}
+.fa_icon_beneficios_can{
+    color: #eb0064;
+    transition: all 0.1s ease-in-out;
+}
+.fa_icon_beneficios{
+    color: #45d2da;
+    transition: all 0.1s ease-in-out;
+}
+
+.item_beneficios_emp{
+    height: 50px;
+    padding-top: 15px !important;
+    cursor: default;
+    transition: all 0.1s ease-in-out;
+}
+.item_beneficios_emp:hover{
+    font-weight: bold;
+    padding-left: 20px;
+    color: #45d2da;
+}
+.item_beneficios_emp:hover >.fa_icon_beneficios{
+    font-size: 20px;
+}
+.img_beneficios{
+    float: right;
+    margin-top: -5px;
+    width: 30px;
+    transform: scale(0);
+    transition: all 0.1s ease-in-out;
+}
+.item_beneficios_emp:hover >.img_beneficios{
+    transform: scale(1);
+}
+@media only screen and (max-width: 600px) {
+    .background .control_beneficios .background{
+        width: 100%;
+        height: auto;
+        margin-left: 0%;
+    }
+    .background .control_beneficios .background .tabsnavbar .background{
+        width: 100%;
+        margin-left: 0%;
+    }
+    .lista_beneficios_candidato .background{
+        width: 100% !important;
+        margin-left: 0% !important;
+    }
+    .lista_beneficios_empresa .background{
+        width: 100% !important;
+        margin-left: 0% !important;
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+}
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+
+}
+@media only screen and (min-width: 1440px) and (max-width: 1600px) {
+
+}
+@media only screen and (min-width: 1600px) {
+
+}

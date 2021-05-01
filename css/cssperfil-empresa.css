@@ -1,0 +1,470 @@
+/* -------------------------------------------- */
+.tag_simple{
+    color: #5e4600;
+    padding-left: 5px;
+    font-weight: bold;
+    -webkit-text-stroke-width: 0.01px;
+    -webkit-text-stroke-color: #ffc107;
+}
+.tag_simple_perfil{
+    color: var(--colorNew);
+    padding-left: 5px;
+    font-weight: bold;
+}
+.btn_item_perfil{
+    border-radius: 5px;
+    width: 50% !important;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out !important;
+}
+.btn_item_perfil:hover{
+    background-color: var(--colorBlue) !important;
+    color: white;
+}
+.btn_config{
+    background-color: var(--colorNew) !important;
+    border: none !important;
+    font-size: 13px !important;
+}
+.btn_config:focus{
+    box-shadow: none !important;
+}
+.btn_cancel_config{
+    border: none !important;
+    font-size: 13px !important;
+}
+.tipoCuenta_config{
+    margin-left: 15px;
+    margin-top: 5px;
+    font-weight: bold;
+    color: rgb(145, 145, 145);
+}
+.input_config{
+    color: rgb(145, 145, 145) !important;
+    font-size: 13px !important;
+}
+.input_config_edit{
+    color: black !important;
+    font-size: 13px !important;
+}
+.cambiar_config{
+    margin-left: 15px !important;
+    margin-top: 10px;
+    font-weight: bold;
+    color: var(--colorBlue);
+    text-decoration: none;
+    font-size: 13px;
+}
+.tag_config{
+    font-size: 13px !important;
+}
+.btn_verificar{
+    width: 300px;
+    height: 40px;
+    background-color: transparent;
+    cursor: pointer;
+}
+.btn_verificar .background{
+    width: 100%;
+    height: 100%;
+    margin-left: 0%;
+    border-radius: 100px;
+    background-color: #4285f4;
+    overflow: hidden;
+}
+.btn_verificar .background .left{
+    float: left;
+    width: 15%;
+    height: 90%;
+    background-color: white;
+    padding-top: 5px;
+    padding-left: 10px;
+    margin-left: 0.8%;
+    margin-top: 0.8%;
+    border-radius: 30px 0px 0px 30px;
+}
+.btn_verificar .background .left img{
+    width: 25px;
+}
+.btn_verificar .background .middle{
+    float: left;
+    width: 65%;
+    padding-top: 10px;
+    padding-left: 5px;
+    text-align: right;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+}
+.btn_verificar .background .right{
+    float: left;
+    width: 15%;
+}
+.select_file_ruc::-webkit-file-upload-button {
+    visibility: hidden;
+    
+}
+.select_file_ruc::before {
+    content: 'Imagen de Ficha RUC  ( jpg - png )';
+    color: gray;
+}
+.select_file_comp::-webkit-file-upload-button {
+    visibility: hidden;
+    
+}
+.select_file_comp::before {
+    content: 'Comprobante - Domicilio Fiscal ( jpg - png )';
+    color: gray;
+}
+.postulantes{
+    width: 100%;
+    height: 25px;
+    background-color: transparent;
+    cursor: pointer;
+}
+.postulantes .label{
+    float: left;
+    width: 25%;
+}
+.postulantes .cant_postulantes{
+    float: left;
+    width: 25%;
+    background-color: var(--colorNew);
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 10px;
+}
+/* -------------------------------------------- */
+.item_profile_empresa{
+    background-color: transparent !important;
+    color: gray !important;
+}
+.item_profile_empresa:hover{
+    background-color: transparent !important;
+    color: var(--colorNew) !important;
+}
+.item_profile_selected_empresa{
+    font-weight: bold !important;
+    color: var(--colorNew) !important;
+    transition: all 0.2s ease-in-out !important;
+}
+.background .content_page{
+    width: 100%;
+    height: 70vh;
+}
+.background .content_page >.background{
+    width: 80%;
+    margin-left: 10%;
+    background-color: transparent;
+}
+.background .content_page >.background .content{
+    width: 100%;
+    height: auto;
+}
+.background .content_page >.background .content .sideLeft{
+    float: left;
+    width: 30%;
+    background-color: transparent;
+}
+.background .content_page >.background .content .sideLeft .background{
+    width: 95%;
+    margin-left: 2.5%;
+    background-color: transparent;
+}
+.background .content_page >.background .content .sideLeft .background .head{
+    width: 100%;
+    height: 180px;
+}
+.background .content_page >.background .content .sideLeft .background .head >.background{
+    width: 100%;
+    height: 100%;
+    margin-left: 0%;
+    border: solid 1px var(--colorGray);
+    border-radius: 10px;
+}
+.background .content_page >.background .content .sideLeft .background .head >.background .logo_empresa{
+    width: 100%;
+    text-align: center;
+}
+.background .content_page >.background .content .sideLeft .background .head >.background .logo_empresa img{
+    width: 50%;
+}
+.background .content_page >.background .content .sideLeft .background .head >.background .nombre_empresa{
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    color: var(--colorBlue);
+    font-size: 20px;
+}
+.background .content_page >.background .content .sideLeft .background .menu_profile{
+    width: 100%;
+    height: auto;
+}
+.background .content_page >.background .content .sideLeft .background .menu_profile >.background{
+    width: 100%;
+    height: 100%;
+    margin-left: 0%;
+    border: solid 1px var(--colorGray);
+    border-radius: 10px;
+}
+.background .content_page >.background .content .sideRight{
+    float: left;
+    width: 70%;
+}
+.background .content_page >.background .content .sideRight .background{
+    width: 95%;
+}
+/* CONTENEDOR TAB ------------------------------------------------*/
+.background_width100{
+    width: 100% !important;
+}
+.background_width50{
+    width: 50% !important;
+}
+.control_tab{
+    margin-top: 10px;
+    width: 100%;
+    height: 65vh;
+    border: solid 1px var(--colorGray);
+    border-radius: 5px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.control_tab >.background{
+    height: 100% !important;
+    margin-left: 0%;
+    padding: 10px;
+    padding-left: 25px;
+    background-color: transparent;
+}
+.control_tab >.title{
+    width: 100%;
+    height: 50px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: white;
+    padding-left: 20px;
+    padding-top: 10px;
+    position: sticky !important;
+    top: 0px;
+    box-shadow: 4px 2px 7px -1px rgba(0,0,0,0.38);
+    z-index: 1020;
+}
+.control_tab >.background .title{
+    width: 100%;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.control_tab >.background .subtitle{
+    width: 100%;
+    text-align: left;
+    font-size: 17px;
+    font-weight: bold;
+    color: var(--colorNew);
+    padding-left: 5px;
+}
+.control_tab >.background .subtitle_dot{
+    width: 100%;
+    text-align: left;
+    font-size: 17px;
+    font-weight: bold;
+    color: var(--colorBlue);
+    padding-left: 17px;
+}
+.control_tab >.background .content{
+    width: 100%;
+}
+/*------------------------------------------------*/
+/* BLOQUE 2 ------------------------------------------------*/
+.plan_color_destacado{
+    background-color: var(--colorBlue);
+}
+.plan_color_relevante{
+    background-color: var(--colorOcre);
+}
+.plan_color_simple{
+    background-color: var(--colorPink);
+}
+.planes{
+    width: 100%;
+    height: auto;
+}
+.planes .plan{
+    float: left;
+    width: 300px;
+    background-color: transparent;
+}
+.planes .plan .background{
+    margin-top: 70px;
+    width: 95% !important;
+    margin-left: 2.5%;
+    height: 380px;
+    background-color: white;
+}
+.planes .plan .background .head{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+.planes .plan .background .head .line_up{
+    height: 10px;
+}
+.planes .plan .background .head .icon{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    font-size: 40px;
+    padding-top: 20px;
+    color: white;
+    text-align: center;
+    margin-left: 85px;
+    margin-top: -75px;
+}
+.planes .plan .background >.title{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+.planes .plan .background .terminos{
+    font-size: 15px;
+}
+.planes .plan .background .terminos .lista_terminos{
+    margin-left: 5px;
+    list-style: none;
+    line-height: 30px;
+    font-weight: 700;
+}
+.planes .plan .background .terminos .lista_terminos li:before {
+    content: '✓\00a0\00a0\00a0';
+    color: var(--colorBlue);
+    font-weight: bold;
+}
+.planes .plan .background .precio{
+    font-size: 35px;
+    color: var(--colorBlue);
+    text-align: center;
+    font-weight: bold;
+}
+.planes .plan .background .button_plan{
+    text-align: center;
+}
+.planes .plan .background .button_plan .btn_planes{
+    border: none !important;
+    border-radius: 0px !important;
+    background-color: var(--colorPink);
+    color: white;
+    width: 220px;
+    box-shadow: 0px 5px 7px 2px rgba(0,0,0,0.36);
+}
+
+.tipopagos{
+    width: 100%;
+    height: 200px;
+    background-color: transparent;
+}
+.tipopagos .background{
+    width: 95%;
+    margin-left: 3.5%;
+}
+.tipopagos .background .pago{
+    float: left;
+    width: 150px;
+    height: 150px;
+    margin-top: 2%;
+    background-color: transparent;
+}
+.tipopagos .background .pago .background{
+    width: 95%;
+    height: 95%;
+    margin-left: 2.5%;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.tipopagos .background .pago .background:hover{
+    background-color: var(--colorPink);
+}
+.tipopagos .background .pago .background img{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+/*------------------------------------------------*/
+/* BLOQUE 5 ------------------------------------------------*/
+.card_empleado{
+    width: 100%;
+    height: auto;
+}
+.card_empleado .background{
+    width: 95%;
+    height: 150px;
+    margin-left: 2.5%;
+}
+.card_empleado .background .column1{
+    float: left;
+    width: 35%;
+}
+.card_empleado .background .column2{
+    float: left;
+    width: 5%;
+}
+.card_empleado .background .column3{
+    float: left;
+    width: 60%;
+}
+.btn_generapago{
+    width: 70px !important;
+    height: 35px !important;
+    background-color: var(--colorOcre) !important;
+    border: none  !important;
+    color: black !important;
+    font-weight: bold !important;
+    font-size: 13px !important;
+    margin-left: 15px !important;
+    box-shadow: none  !important;
+}
+.button_nombreempleado{
+    color: var(--colorNew) !important;
+    font-weight: bold;
+}
+/*------------------------------------------------*/
+/* BLOQUE 6 ------------------------------------------------*/
+.button_serprime{
+    width: 100%;
+    text-align: right;
+}
+.btn_prime{
+    width: 200px !important;
+    font-weight: bold !important;
+    font-size: 15px;
+    box-shadow: none !important;
+    transition: all 0.2s ease-in-out !important;
+}
+.btn_prime:hover{
+    width: 215px !important;
+}
+
+/*------------------------------------------------*/
+@media only screen and (max-width: 600px) {
+
+}
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+}
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+
+}
+@media only screen and (min-width: 1440px) and (max-width: 1600px) {
+
+}
+@media only screen and (min-width: 1600px) {
+    
+}

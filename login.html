@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <!-- REFERENCIAS PROPIAS ------------------------------------------------------------------------------------------------------------------------------------------>
+     <link href="css/cssmaster.css" rel="stylesheet">
+     <link href="css/cssanimation.css" rel="stylesheet">
+     <link href="css/csslogin.css" rel="stylesheet">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>    
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <script src="https://kit.fontawesome.com/a59e25dd52.js" crossorigin="anonymous"></script>
+   <!----------------------------------------------------------------------------------------------------------------------------------------------------------------->
+</head>
+<body>
+    <div class="container_page">
+        <div class="background">
+            <div class="head menu-sticky">
+                <div class="menu_sticky_content">
+                    <nav class="navbar fixed-top navbar-light bg-light">
+                        <div class="menu_page">
+                            <nav class="navbar navbar-expand-lg navbar-light bg-light navbar_page">
+                                <div class="container-fluid">
+                                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                  </button>
+                                  <div class="collapse navbar-collapse" id="navbarSupportedContent" style="text-align: left;">
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                        <li class="nav-item iconwork_page">
+                                            <i class="fas fa-briefcase" style="color: rgb(35, 93, 216);font-size: 20px;padding-top: 10px;"></i>
+                                        </li>  
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                                        </li>
+                                        <li class="nav-item bar_btn_mobile">
+                                            <button type="button" class="btn btn-outline-primary btn_crear_cuenta">Crear cuenta</button>
+                                            <button type="button" class="btn btn-outline-primary btn_acceder_mobile">Acceder</button>
+                                        </li>
+                                        <li class="nav-item">
+                                            <button type="button" class="btn btn-outline-primary btn_publica">Publica Gratis</button>
+                                            <a class="nav-link active nav_link_mobile" aria-current="page" href="#">Publica gratis</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Empleos</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Beneficios</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Regístrate</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Soy empresa</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <button type="button" class="btn btn-outline-primary btn_acceder">Acceder</button>
+                                        </li>
+                                        <!--<li class="nav-item">
+                                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                                        </li>-->
+                                    </ul>
+                                  </div>
+                                </div>
+                            </nav>
+                            <div class="menu_logo" style="float: right;padding-top: 12px;position: inherit;">
+                                <img src="recursos/logo.svg" alt="logo" style="position: inherit;">
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="separator_page"></div>
+            <div class="modal fade" id="modalRecoverypass" tabindex="-1" aria-labelledby="modalRecoverypassLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalRecoverypassLabel">Recurerar contraseña</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="icon_head" style="overflow: hidden;">
+                            <img src="recursos/lock_1.png" alt="" width="70px" style="margin-left: calc(50% - 35px);margin-top: 20px;">
+                        </div>
+                        <div class="modal-body" style="text-align: center;">
+                            <p>* Enviaremos un correo a tu bandeja de entrada.</p>
+                            <form class="form-floating">
+                                <input type="email" class="form-control  " id="floatingInput_emailcandidato" placeholder="name@example.com" value="" autocomplete="off">
+                                <label class="label_placeholder" for="floatingInput_emailcandidato">Correo electronico</label>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn btn-primary">Enviar correo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="back_blue"></div>
+            <div class="tabsnavbar">
+                <div class="background">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist" style="border: none !important;">
+                        <li class="nav-item" role="presentation">
+                          <button style="border: solid 1px #eb0064 !important;background-color: #eb0064;color: white;" class="nav-link active border-0" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Candidato</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button style="border: solid 1px #45d2da !important;background-color: #45d2da;color: white;" class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Empresa</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--<div class="login_control_candidato">
+                <div class="background">
+                    <div style="height: 40px;"></div>
+                    <div class="head">
+                        <div class="icon_head">
+                            <img src="recursos/hand_login.svg" alt="">
+                        </div>
+                        <div class="title">
+                            <p>Ingresa a tu cuenta</p>
+                        </div>    
+                    </div>
+                    <div class="content_form">
+                        <div class="section1">
+                            <form class="form-floating">
+                                <input type="email" class="form-control  " id="floatingInput_emailcandidato" placeholder="name@example.com" value="" autocomplete="off">
+                                <label class="label_placeholder" for="floatingInput_emailcandidato">Email o usuario</label>
+                            </form>
+                            <div style="height: 10px;"></div>
+                            <form class="form-floating">
+                                <input type="password" class="form-control  " id="floatingInput_passcandidato" placeholder="name@example.com" value="" autocomplete="off">
+                                <label class="label_placeholder" for="floatingInput_passcandidato">Contraseña</label>
+                            </form>
+                        </div>
+                        <div style="height: 20px;"></div>
+                        <div class="bar_buttons">
+                            <button type="button" class="btn btn-primary border-0" style="background: #eb0064;width: 100%;color: white;">Ingresar</button>
+                            <div style="height: 10px;"></div>
+                            <button type="button" class="btn btn-primary bg-transparent" style="border-color: #eb0064;width: 100%;color: #eb0064;">Crear cuenta</button>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+            <!--<div class="login_control_empresa">
+                <div class="background">
+                    <div style="height: 40px;"></div>
+                    <div class="head">
+                        <div class="icon_head">
+                            <img src="recursos/arrow_login.svg" alt="">
+                        </div>
+                        <div class="title">
+                            <p>Qué lindo tenerte por aquí</p>
+                            <p>Ingresa tus datos para empezar con la búsqueda</p>
+                        </div>
+                    </div>
+                    <div class="content_form">
+                        <div class="section1">
+                            <form class="form-floating">
+                                <input type="email" class="form-control  " id="floatingInput_emailempresa" placeholder="name@example.com" value="" autocomplete="off">
+                                <label class="label_placeholder" for="floatingInput_emailempresa">Email o usuario</label>
+                            </form>
+                            <div style="height: 10px;"></div>
+                            <form class="form-floating">
+                                <input type="password" class="form-control  " id="floatingInput_passempresa" placeholder="name@example.com" value="" autocomplete="off">
+                                <label class="label_placeholder" for="floatingInput_passempresa">Contraseña</label>
+                            </form>
+                        </div>
+                        <div class="recovery_pass">
+                            <div style="height: 20px;"></div>
+                            <a href="#" class="link-primary">Recuperar contraseña</a>
+                            <div style="height: 20px;"></div>
+                        </div>
+                        <div class="bar_buttons">
+                            <button type="button" class="btn btn-primary border-0" style="background: #eb0064;width: 100%;color: white;">Ingresar</button>
+                            <div style="height: 10px;"></div>
+                            <button type="button" class="btn btn-primary bg-transparent" style="border-color: #eb0064;width: 100%;color: #eb0064;">No tengo cuenta</button>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="login_control_candidato">
+                        <div class="background">
+                            <div style="height: 40px;"></div>
+                            <div class="head">
+                                <div class="icon_head">
+                                    <img src="recursos/hand_login.svg" alt="">
+                                </div>
+                                <div class="title">
+                                    <p>Ingresa a tu cuenta</p>
+                                </div>    
+                            </div>
+                            <div class="content_form">
+                                <div class="section1">
+                                    <form class="form-floating">
+                                        <input type="email" class="form-control  " id="floatingInput_emailcandidato" placeholder="name@example.com" value="" autocomplete="off">
+                                        <label class="label_placeholder" for="floatingInput_emailcandidato">Email o usuario</label>
+                                    </form>
+                                    <div style="height: 10px;"></div>
+                                    <form class="form-floating">
+                                        <input type="password" class="form-control  " id="floatingInput_passcandidato" placeholder="name@example.com" value="" autocomplete="off">
+                                        <label class="label_placeholder" for="floatingInput_passcandidato">Contraseña</label>
+                                    </form>
+                                </div>
+                                <div class="recovery_pass">
+                                    <div style="height: 20px;"></div>
+                                    <a href="#" class="link-primary" data-bs-toggle="modal" data-bs-target="#modalRecoverypass">Recuperar contraseña</a>
+                                    <div style="height: 20px;"></div>
+                                </div>
+                                <div class="bar_buttons">
+                                    <button type="button" class="btn btn-primary border-0" style="background: #eb0064;width: 100%;color: white;">Ingresar</button>
+                                    <div style="height: 10px;"></div>
+                                    <button type="button" class="btn btn-primary bg-transparent" style="border-color: #eb0064;width: 100%;color: #eb0064;">Crear cuenta</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="login_control_empresa">
+                        <div class="background">
+                            <div style="height: 40px;"></div>
+                            <div class="head">
+                                <div class="icon_head">
+                                    <img src="recursos/arrow_login.svg" alt="">
+                                </div>
+                                <div class="title">
+                                    <p>Qué lindo tenerte por aquí</p>
+                                    <p>Ingresa tus datos para empezar con la búsqueda</p>
+                                </div>
+                            </div>
+                            <div class="content_form">
+                                <div class="section1">
+                                    <form class="form-floating">
+                                        <input type="email" class="form-control  " id="floatingInput_emailempresa" placeholder="name@example.com" value="" autocomplete="off">
+                                        <label class="label_placeholder" for="floatingInput_emailempresa">Email o usuario</label>
+                                    </form>
+                                    <div style="height: 10px;"></div>
+                                    <form class="form-floating">
+                                        <input type="password" class="form-control  " id="floatingInput_passempresa" placeholder="name@example.com" value="" autocomplete="off">
+                                        <label class="label_placeholder" for="floatingInput_passempresa">Contraseña</label>
+                                    </form>
+                                </div>
+                                <div class="recovery_pass">
+                                    <div style="height: 20px;"></div>
+                                    <a href="#" class="link-primary" data-bs-toggle="modal" data-bs-target="#modalRecoverypass">Recuperar contraseña</a>
+                                    <div style="height: 20px;"></div>
+                                </div>
+                                <div class="bar_buttons">
+                                    <button type="button" class="btn btn-primary border-0" style="background: #45d2da;width: 100%;color: white;">Ingresar</button>
+                                    <div style="height: 10px;"></div>
+                                    <button type="button" class="btn btn-primary bg-transparent" style="border-color: #45d2da;width: 100%;color: #45d2da;">No tengo cuenta</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="separator_page"></div>
+            <hr class="hr_center">
+            <div class="copyright">
+                <div class="background">
+                    <ul class="list-group list-group-horizontal">
+                        <li class="list-group-item border-0 item_copyright"><a href="">Términos y Condiciones</a></li>
+                        <li class="list-group-item border-0 item_copyright"><a href="">Política de Privacidad</a></li>
+                        <li class="list-group-item border-0 item_copyright"><a href="">Condiciones de contratación</a></li>
+                        <li class="list-group-item border-0 item_copyright"><a href="">Bumeran publicidad</a></li>
+                        <li class="list-group-item border-0 item_copyright"><a href="">Noticias</a></li>
+                        <li class="list-group-item border-0 item_copyright"><a href="">Ofertas de Empleo</a></li>
+                        <li class="list-group-item border-0 item_copyright"><a href="">Libro de reclamaciones</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

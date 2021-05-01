@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <!-- REFERENCIAS PROPIAS ------------------------------------------------------------------------------------------------------------------------------------------>
+     <link href="css/cssmaster.css" rel="stylesheet">
+     <link href="css/cssanimation.css" rel="stylesheet">
+     <link href="css/cssperfil-empresa.css" rel="stylesheet">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>    
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <script src="https://kit.fontawesome.com/a59e25dd52.js" crossorigin="anonymous"></script>
+   <!----------------------------------------------------------------------------------------------------------------------------------------------------------------->
+</head>
+<body>
+    <div class="modal fade" id="modalEmail_config" tabindex="-1" aria-labelledby="ModalLabel_email" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ModalLabel_email">Cambiar Email</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text tag_config" id="basic-addon1">Email</span>
+                        <input type="text" class="form-control input_config_edit" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn_cancel_config" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary btn_config">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalPass_config" tabindex="-1" aria-labelledby="ModalLabel_pass" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ModalLabel_pass">Cambiar Contraseña</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text tag_config" id="basic-addon2">Contraseña</span>
+                        <input type="password" class="form-control input_config_edit" aria-label="Username" aria-describedby="basic-addon2">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn_cancel_config" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary btn_config">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalPhone_config" tabindex="-1" aria-labelledby="ModalLabel_phone" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ModalLabel_phone">Cambiar Teléfono</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text tag_config" id="basic-addon2">Telefono</span>
+                        <input type="password" class="form-control input_config_edit" aria-label="Username" aria-describedby="basic-addon2">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn_cancel_config" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary btn_config">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalVerify_config" tabindex="-1" aria-labelledby="ModalLabel_verify" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ModalLabel_verify">Verificar Cuenta</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        <div class="btn_verificar">
+                            <div class="background">
+                                <div class="left">
+                                    <img src="recursos/google/google_1.svg">
+                                </div>
+                                <div class="middle">
+                                    <p>Iniciar sesión con Google</p>
+                                </div>
+                                <div class="right">
+                                </div>
+                            </div>
+                        </div>
+                        <div style="height: 10px;"></div>
+                        <div class="mb-3">
+                            <input class="form-control form-control-sm select_file_ruc" id="fileFichaRUC" type="file" accept=".jpg,.png" required>
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text tag_config" id="basic-addon1">Pagina Web (url)</span>
+                            <input type="url" class="form-control input_config_edit" aria-describedby="basic-addon1" required>
+                        </div>
+                        <div class="mb-3">
+                            <input class="form-control form-control-sm select_file_comp" id="fileFichaRUC" type="file" accept=".jpg,.png" required>
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text tag_config" id="basic-addon2">Correo</span>
+                            <input type="email" class="form-control input_config_edit" aria-describedby="basic-addon2" required>
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text tag_config" id="basic-addon3">Teléfono</span>
+                            <input type="text" class="form-control input_config_edit" aria-describedby="basic-addon3" required>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary btn_cancel_config" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="submit" class="btn btn-primary btn_config">Guardar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container_page">
+        <div class="background">
+            <div class="head menu-sticky">
+                <div class="menu_sticky_content">
+                    <nav class="navbar fixed-top navbar-light bg-light">
+                        <div class="menu_page">
+                            <nav class="navbar navbar-expand-lg navbar-light bg-light navbar_page">
+                                <div class="container-fluid">
+                                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                  </button>
+                                  <div class="collapse navbar-collapse" id="navbarSupportedContent" style="text-align: left;">
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                        <li class="nav-item iconwork_page">
+                                            <i class="fas fa-briefcase" style="color: rgb(35, 93, 216);font-size: 20px;padding-top: 10px;"></i>
+                                        </li>  
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                                        </li>
+                                        <li class="nav-item bar_btn_mobile">
+                                            <button type="button" class="btn btn-outline-primary btn_crear_cuenta">Crear cuenta</button>
+                                            <button type="button" class="btn btn-outline-primary btn_acceder_mobile">Acceder</button>
+                                        </li>
+                                        <li class="nav-item">
+                                            <button type="button" class="btn btn-outline-primary btn_publica">Publica Gratis</button>
+                                            <a class="nav-link active nav_link_mobile" aria-current="page" href="#">Publica gratis</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Empleos</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Beneficios</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Regístrate</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Soy empresa</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <button type="button" class="btn btn-outline-primary btn_acceder">Acceder</button>
+                                        </li>
+                                        <!--<li class="nav-item">
+                                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                                        </li>-->
+                                    </ul>
+                                  </div>
+                                </div>
+                            </nav>
+                            <div class="menu_logo" style="float: right;padding-top: 12px;position: inherit;">
+                                <img src="recursos/logo.svg" alt="logo" style="position: inherit;">
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="separator_page"></div>
+            <div class="content_page">
+                <div class="background">
+                    <div class="content">
+                        <div class="sideLeft">
+                            <div class="background">
+                                <div style="height: 10px;"></div>
+                                <div class="head">
+                                    <div class="background">
+                                        <div style="height: 10px;"></div>
+                                        <div class="logo_empresa">
+                                            <img src="recursos/empresa_logo.jpg" alt="">
+                                        </div>
+                                        <div class="nombre_empresa">
+                                            <p class="nombre">Nombre Empresa</p>
+                                        </div>
+                                        <div style="height: 10px;"></div>
+                                    </div>
+                                </div>
+                                <div style="height: 10px;"></div>
+                                <div class="menu_profile">
+                                    <div class="background">
+                                        <div style="height: 10px;"></div>
+                                        <ul class="nav flex-column" id="myTab" role="tablist" style="border: none !important;">
+                                            <li class="nav-item" role="presentation">
+                                              <button class="nav-link border-0 item_profile_empresa item_profile_selected_empresa" id="cuenta-tab" data-bs-toggle="tab" data-bs-target="#cuenta" type="button" role="tab" aria-controls="cuenta" aria-selected="true">Cuenta</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                              <button class="nav-link border-0 item_profile_empresa" id="mispublicaciones-tab" data-bs-toggle="tab" data-bs-target="#mispublicaciones" type="button" role="tab" aria-controls="mispublicaciones" aria-selected="false">Mis publicaciones</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link border-0 item_profile_empresa" id="publicar-tab" data-bs-toggle="tab" data-bs-target="#publicar" type="button" role="tab" aria-controls="publicar" aria-selected="false">Publicar empleo</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link border-0 item_profile_empresa" id="busqueda-tab" data-bs-toggle="tab" data-bs-target="#busqueda" type="button" role="tab" aria-controls="busqueda" aria-selected="false">Busqueda de CV's</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link border-0 item_profile_empresa" id="perfil-tab" data-bs-toggle="tab" data-bs-target="#perfil" type="button" role="tab" aria-controls="perfil" aria-selected="false">Perfil</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link border-0 item_profile_empresa" id="planprime-tab" data-bs-toggle="tab" data-bs-target="#planprime" type="button" role="tab" aria-controls="planprime" aria-selected="false">Plan Prime</button>
+                                            </li>
+                                        </ul>
+                                        <div style="height: 10px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sideRight">
+                            <div class="background">
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="cuenta" role="tabpanel" aria-labelledby="cuenta-tab">
+                                        <div class="control_tab">
+                                            <div class="title">
+                                                <p>Configuración de la cuenta</p>
+                                            </div>
+                                            <div class="background background_width50">
+                                                <div class="content">
+                                                    <div class="btn-group">
+                                                        <button type="button" class="btn btn-success btn_config">Tipo de Cuenta</button>
+                                                        <button type="button" class="btn btn-success btn_config dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                                                          <span class="visually-hidden">Toggle Dropdown</span>
+                                                        </button>
+                                                        <ul class="dropdown-menu">
+                                                          <li><a class="dropdown-item item_tipocuenta" data-tipo-cuenta="Empresa" href="#">Empresa</a></li>
+                                                          <li><a class="dropdown-item item_tipocuenta" data-tipo-cuenta="Candidato" href="#">Candidato</a></li>
+                                                        </ul>
+                                                        <span class="tipoCuenta_config">Empresa</span>
+                                                    </div>
+                                                    <div style="height: 10px;"></div>
+                                                    <div class="input-group mb-3">
+                                                        <span class="input-group-text tag_config" id="basic-addon1">Email</span>
+                                                        <input type="text" class="form-control input_config" aria-label="Username" aria-describedby="basic-addon1" value="correo@mail.com" disabled>
+                                                        <a href="" class="cambiar_config" data-bs-toggle="modal" data-bs-target="#modalEmail_config"><span>Cambiar</span></a>
+                                                    </div>
+                                                    <div class="input-group mb-3">
+                                                        <span class="input-group-text tag_config" id="basic-addon1">Contraseña</span>
+                                                        <input type="password" class="form-control input_config" aria-label="Username" aria-describedby="basic-addon1" value="1234567890" disabled>
+                                                        <a href="" class="cambiar_config" data-bs-toggle="modal" data-bs-target="#modalPass_config"><span>Cambiar</span></a>
+                                                    </div>
+                                                    <div class="input-group mb-3">
+                                                        <span class="input-group-text tag_config" id="basic-addon1">Teléfono</span>
+                                                        <input type="text" class="form-control input_config" aria-label="Username" aria-describedby="basic-addon1" value="987654321" disabled>
+                                                        <a href="" class="cambiar_config" data-bs-toggle="modal" data-bs-target="#modalPhone_config"><span>Cambiar</span></a>
+                                                    </div>
+                                                    <button type="button" class="btn btn-success btn_config" data-bs-toggle="modal" data-bs-target="#modalVerify_config">Verificar Cuenta</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade show " id="mispublicaciones" role="tabpanel" aria-labelledby="mispublicaciones-tab">
+                                        <div class="control_tab">
+                                            <div class="title">
+                                                <p>Mis publicaciones</p>
+                                            </div>
+                                            <div class="background background_width50">
+                                                <div class="control_publicacion">
+                                                    <div class="card_empleo">
+                                                        <div style="height: 10px;"></div>
+                                                        <div class="head">
+                                                            <div class="logo_empresa">
+                                                                <img src="recursos/empresa_logo.jpg" alt="">
+                                                            </div>
+                                                            <div class="empresa">
+                                                                <div style="height: 10px;"></div>
+                                                                <p><span class="nombre">NOMBRE EMPRESA</span></p>
+                                                                <p><span class="ubicacion">Lima, Lima</span></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="empleo">
+                                                            <p><span class="empleo_nombre">Nombre empleo</span><span class="empleo_discapacidad">&nbsp;&nbsp;<i class="fas fa-wheelchair"></i></span></p>
+                                                        </div>
+                                                        <div class="datos">
+                                                            <div class="tipo_empleo">
+                                                                <p><span class="tipo_empleo_dato">Full-time</span></p>
+                                                            </div>
+                                                            <div class="fecha_pub">
+                                                                <span class="fecha_pub_nuevo">NUEVO</span>
+                                                                <span class="fecha_pub_cuando">Publicado Ayer</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="destacado_yellow"></div>
+                                                        <div class="icon_star"></div>
+                                                    </div>
+                                                    <div style="height: 10px;"></div>
+                                                    <div class="postulantes">
+                                                        <div class="label">Postulantes:</div>
+                                                        <div class="cant_postulantes">26</div>
+                                                    </div>
+                                                </div>
+                                                <div style="height: 10px;"></div>
+                                                <div class="control_publicacion">
+                                                    <div class="card_empleo">
+                                                        <div style="height: 10px;"></div>
+                                                        <div class="head">
+                                                            <div class="logo_empresa">
+                                                                <img src="recursos/empresa_logo.jpg" alt="">
+                                                            </div>
+                                                            <div class="empresa">
+                                                                <div style="height: 10px;"></div>
+                                                                <p><span class="nombre">NOMBRE EMPRESA</span></p>
+                                                                <p><span class="ubicacion">Lima, Lima</span></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="empleo">
+                                                            <p><span class="empleo_nombre">Nombre empleo</span><span class="empleo_discapacidad">&nbsp;&nbsp;<i class="fas fa-wheelchair"></i></span></p>
+                                                        </div>
+                                                        <div class="datos">
+                                                            <div class="tipo_empleo">
+                                                                <p><span class="tipo_empleo_dato">Full-time</span></p>
+                                                            </div>
+                                                            <div class="fecha_pub">
+                                                                <span class="fecha_pub_nuevo">NUEVO</span>
+                                                                <span class="fecha_pub_cuando">Publicado el 20/01/2021</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="destacado_yellow"></div>
+                                                        <div class="icon_star"></div>
+                                                    </div>
+                                                    <div style="height: 10px;"></div>
+                                                    <div class="postulantes">
+                                                        <div class="label">Postulantes:</div>
+                                                        <div class="cant_postulantes">18</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade show " id="publicar" role="tabpanel" aria-labelledby="publicar-tab">
+                                        <div class="control_tab" style="background-color: rgba(231, 231, 231, 0.685);">
+                                            <div class="title">
+                                                <p>Publicar empleo</p>
+                                            </div>
+                                            <div class="background background_width100">
+                                                <div class="planes">
+                                                    <div class="plan">
+                                                        <div class="background">
+                                                            <div class="head">
+                                                                <div class="line_up plan_color_destacado"></div>
+                                                                <div class="icon plan_color_destacado">
+                                                                    <i class="fas fa-check-circle"></i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="title">
+                                                                <p>Aviso Destacado</p>
+                                                            </div>
+                                                            <div class="terminos">
+                                                                <ul class="lista_terminos">
+                                                                    <li class="item_terminos">Termino 1</li>
+                                                                    <li class="item_terminos">Termino 2</li>
+                                                                    <li class="item_terminos">Termino 3</li>
+                                                                    <li class="item_terminos">Termino 4</li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="precio">
+                                                                <p>S/.100</p>
+                                                            </div>
+                                                            <div class="button_plan">
+                                                                <button type="button" class="btn btn-primary btn_planes">COMPRAR</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="plan">
+                                                        <div class="background">
+                                                            <div class="head">
+                                                                <div class="line_up plan_color_relevante"></div>
+                                                                <div class="icon plan_color_relevante">
+                                                                    <i class="fas fa-star"></i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="title">
+                                                                <p>Aviso Destacado</p>
+                                                            </div>
+                                                            <div class="terminos">
+                                                                <ul class="lista_terminos">
+                                                                    <li class="item_terminos">Termino 1</li>
+                                                                    <li class="item_terminos">Termino 2</li>
+                                                                    <li class="item_terminos">Termino 3</li>
+                                                                    <li class="item_terminos">Termino 4</li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="precio">
+                                                                <p>S/.200</p>
+                                                            </div>
+                                                            <div class="button_plan">
+                                                                <button type="button" class="btn btn-primary btn_planes">COMPRAR</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="plan">
+                                                        <div class="background">
+                                                            <div class="head">
+                                                                <div class="line_up plan_color_simple"></div>
+                                                                <div class="icon plan_color_simple">
+                                                                    <i class="far fa-file-alt"></i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="title">
+                                                                <p>Aviso Destacado</p>
+                                                            </div>
+                                                            <div class="terminos">
+                                                                <ul class="lista_terminos">
+                                                                    <li class="item_terminos">Termino 1</li>
+                                                                    <li class="item_terminos">Termino 2</li>
+                                                                    <li class="item_terminos">Termino 3</li>
+                                                                    <li class="item_terminos">Termino 4</li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="precio">
+                                                                <p>S/.300</p>
+                                                            </div>
+                                                            <div class="button_plan">
+                                                                <button type="button" class="btn btn-primary btn_planes">COMPRAR</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--<div class="control_tab" style="background-color: rgba(231, 231, 231, 0.685);">
+                                            <div class="background background_width100">
+                                                <div class="tipopagos">
+                                                    <div class="background">
+                                                        <div class="pago">
+                                                            <div class="background">
+                                                                <img src="recursos/pagos/yape.png">
+                                                            </div>
+                                                        </div>
+                                                        <div class="pago">
+                                                            <div class="background">
+                                                                <img src="recursos/pagos/QR.png">
+                                                            </div>
+                                                        </div>
+                                                        <div class="pago">
+                                                            <div class="background">
+                                                                <img src="recursos/pagos/VISA.jpg" style="margin-top: 25%;">
+                                                            </div>
+                                                        </div>
+                                                        <div class="pago">
+                                                            <div class="background">
+                                                                <img src="recursos/pagos/MASTERCARD.png"  style="margin-top: 25%;">
+                                                            </div>
+                                                        </div>
+                                                        <div class="pago">
+                                                            <div class="background">
+                                                                <img src="recursos/pagos/pagoefectivo.png"  style="margin-top: 25%;">
+                                                            </div>
+                                                        </div>
+                                                        <div class="pago">
+                                                            <div class="background">
+                                                                <img src="recursos/pagos/transferenciabancaria.jpg"  style="margin-top: 25%;">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>-->
+                                    </div>
+                                    <div class="tab-pane fade show " id="busqueda" role="tabpanel" aria-labelledby="busqueda-tab">
+                                        <div class="control_tab">
+                                            <div class="title">
+                                                <p>Busqueda de CV's</p>
+                                            </div>
+                                            <div class="background background_width100">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade show " id="perfil" role="tabpanel" aria-labelledby="perfil-tab">
+                                        <div class="control_tab">
+                                            <div class="title">
+                                                Perfil Empresa
+                                            </div>
+                                            <div class="background background_width50">
+                                                <div class="control_empleados">
+                                                    <ul class="list-group list-group-flush">
+                                                        <li class="list-group-item">Empleados:<span class="tag_simple_perfil">5</span></li>
+                                                        <li class="list-group-item">Sector:<span class="tag_simple_perfil">Informatica</span></li>
+                                                        <li class="list-group-item">Régimen:<span class="tag_simple_perfil">Contrato Laboral</span></li>
+                                                        <li class="list-group-item"><button type="button" class="btn btn-primary" style="background-color: var(--colorNew);border:none;">Ver Planilla</button></li>
+                                                    </ul>
+                                                    <div style="height: 10px;"></div>
+                                                    <div class="subtitle">
+                                                        Lista Empleados
+                                                    </div>
+                                                    <div style="height: 10px;"></div>
+                                                    <div class="lista_emleados">
+                                                        <div class="accordion" id="accordionExample">
+                                                            <div class="accordion-item">
+                                                              <h2 class="accordion-header" id="headingOne">
+                                                                <button class="accordion-button subtitle_dot" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                                  Nombre Empleado 1
+                                                                </button>
+                                                              </h2>
+                                                              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                                <div class="accordion-body">
+                                                                    <div class="card_empleado">
+                                                                        <div class="background">
+                                                                            <div class="column1">
+                                                                                <p>Área:</p>
+                                                                                <p>Sueldo:</p>
+                                                                                <p>Modalidad:</p>
+                                                                                <p>Fecha de pago:</p>
+                                                                            </div>
+                                                                            <div class="column2">
+                                                                                <p>:</p><p>:</p><p>:</p><p>:</p>
+                                                                            </div>
+                                                                            <div class="column3">
+                                                                                <p class="tag_simple_perfil">Informática</p>
+                                                                                <p class="tag_simple_perfil">2500.00</p>
+                                                                                <p class="tag_simple_perfil">Contrato Laboral</p>
+                                                                                <p class="tag_simple_perfil">30/01/2021<button type="button" class="btn btn-primary btn_generapago">Planilla</button></p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                            <div class="accordion-item">
+                                                                <h2 class="accordion-header" id="headingTwo">
+                                                                  <button class="accordion-button subtitle_dot" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                                                    Nombre Empleado 2
+                                                                  </button>
+                                                                </h2>
+                                                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                                  <div class="accordion-body">
+                                                                      <div class="card_empleado">
+                                                                          <div class="background">
+                                                                              <div class="column1">
+                                                                                  <p>Área:</p>
+                                                                                  <p>Sueldo:</p>
+                                                                                  <p>Modalidad:</p>
+                                                                                  <p>Fecha de pago:</p>
+                                                                              </div>
+                                                                              <div class="column2">
+                                                                                  <p>:</p><p>:</p><p>:</p><p>:</p>
+                                                                              </div>
+                                                                              <div class="column3">
+                                                                                  <p class="tag_simple_perfil">Gerencia</p>
+                                                                                  <p class="tag_simple_perfil">3500.00</p>
+                                                                                  <p class="tag_simple_perfil">Contrato Laboral</p>
+                                                                                  <p class="tag_simple_perfil">15/01/2021<button type="button" class="btn btn-primary btn_generapago">Planilla</button></p>
+                                                                              </div>
+                                                                          </div>
+                                                                      </div>
+                                                                  </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="accordion-item">
+                                                                <h2 class="accordion-header" id="headingThree">
+                                                                  <button class="accordion-button subtitle_dot" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                                                    Nombre Empleado 3
+                                                                  </button>
+                                                                </h2>
+                                                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                                                  <div class="accordion-body">
+                                                                      <div class="card_empleado">
+                                                                          <div class="background">
+                                                                              <div class="column1">
+                                                                                  <p>Área:</p>
+                                                                                  <p>Sueldo:</p>
+                                                                                  <p>Modalidad:</p>
+                                                                                  <p>Fecha de pago:</p>
+                                                                              </div>
+                                                                              <div class="column2">
+                                                                                  <p>:</p><p>:</p><p>:</p><p>:</p>
+                                                                              </div>
+                                                                              <div class="column3">
+                                                                                  <p class="tag_simple_perfil">Servicios Generales</p>
+                                                                                  <p class="tag_simple_perfil">1500.00</p>
+                                                                                  <p class="tag_simple_perfil">Contrato Laboral</p>
+                                                                                  <p class="tag_simple_perfil">15/01/2021<button type="button" class="btn btn-primary btn_generapago">Planilla</button></p>
+                                                                              </div>
+                                                                          </div>
+                                                                      </div>
+                                                                  </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade show " id="planprime" role="tabpanel" aria-labelledby="planprime-tab">
+                                        <div class="control_tab">
+                                            <div class="title">
+                                                <p>Plan Prime</p>
+                                            </div>
+                                            <div class="background background_width100">
+                                                <div class="subtitle">
+                                                    <p>1. Costo</p>
+                                                </div>
+                                                <div class="subtitle_dot">
+                                                    <p>Con Exclusividad :</p>
+                                                </div>
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item">Trabajadores Full-Time:<span class="tag_simple">5% del sueldo</span></li>
+                                                    <li class="list-group-item">Trabajores Part-Time:<span class="tag_simple">8% del sueldo</span></li>
+                                                    <li class="list-group-item"></li>
+                                                </ul>
+                                                <div class="subtitle_dot">
+                                                    <p>Sin Exclusividad :</p>
+                                                </div>
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item">Trabajadores Full-Time:<span class="tag_simple">9% del sueldo</span></li>
+                                                    <li class="list-group-item">Trabajores Part-Time:<span class="tag_simple">12% del sueldo</span></li>
+                                                    <li class="list-group-item"></li>
+                                                </ul>
+                                                <div class="subtitle">
+                                                    <p>2. Beneficios</p>
+                                                </div>
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam nihil minima eaque, repellendus reiciendis illum et dolore sit ratione nulla facere quas at.</li>
+                                                    <li class="list-group-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam nihil minima eaque, repellendus reiciendis illum et dolore sit ratione nulla facere quas at.</li>
+                                                    <li class="list-group-item"></li>
+                                                </ul>
+                                                <div class="button_serprime">
+                                                    <button type="button" class="btn btn-warning btn_prime">Ser Prime</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="hr_center">
+            <div class="copyright">
+                <div class="background">
+                    <ul class="list-group list-group-horizontal">
+                        <li class="list-group-item border-0 item_copyright"><a href="">Términos y Condiciones</a></li>
+                        <li class="list-group-item border-0 item_copyright"><a href="">Política de Privacidad</a></li>
+                        <li class="list-group-item border-0 item_copyright"><a href="">Condiciones de contratación</a></li>
+                        <li class="list-group-item border-0 item_copyright"><a href="">Bumeran publicidad</a></li>
+                        <li class="list-group-item border-0 item_copyright"><a href="">Noticias</a></li>
+                        <li class="list-group-item border-0 item_copyright"><a href="">Ofertas de Empleo</a></li>
+                        <li class="list-group-item border-0 item_copyright"><a href="">Libro de reclamaciones</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(".item_profile_empresa").click(function(){
+            $(".item_profile_empresa").removeClass("item_profile_selected_empresa");
+            $(this).addClass("item_profile_selected_empresa");
+        });
+        $(".item_tipocuenta").click(function(){
+            var tipo = $(this).attr("data-tipo-cuenta");
+            $(".tipoCuenta_config").html(tipo);
+        });
+    </script>
+</body>
+</html>

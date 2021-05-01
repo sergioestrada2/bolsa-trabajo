@@ -1,0 +1,930 @@
+@font-face {
+    font-family: HindVadodara;
+    src: url(../recursos/Fonts/Hind_Vadodara/HindVadodara-Regular.ttf)
+    format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    font-family: "HindVadodara" !important;
+}
+.btn_continuar_page{
+    width: 220px;
+}
+.step1_control{
+    width: 100%;
+    height: 80vh;
+    background-color: rgb(224, 224, 224);
+    display: block;
+}
+.step1_control >.background{
+    width: 40%;
+    height: auto;
+    background-color: white;
+    margin-left: calc(50% - 20%);
+}
+.step1_control .background .up_icon{
+    width: 100%;
+    height: 75px;
+    background-color: transparent;
+    font-size: 35px;
+    color: white;
+}
+.step1_control .background .up_icon .icon{
+    width: 75px;
+    height: 75px;
+    padding-left: 20px;
+    padding-top: 12px;
+    border-radius: 50%;
+    margin-left: calc(calc(100% / 2) - 37.5px);
+    background-color: rgb(0, 255, 234);
+}
+.step1_control .background .title{
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.step1_control .background .content_form{
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+}
+.step1_control .background .content_form .section1{
+    width: 95%;
+    height: auto;
+    margin-left: 2.5%;
+}
+.step1_control .background .content_form .section2{
+    width: 95%;
+    height: auto;
+    margin-left: 2.5%;
+}
+.step1_control .background .content_form .section2 .sideLeft{
+    float: left;
+    width: 50%;
+}
+.step1_control .background .content_form .section2 .sideLeft .background{
+    width: 95%;
+    height: auto;
+    float: left;
+}
+.step1_control .background .content_form .section2 .sideRight{
+    float: left;
+    width: 50%;
+}
+.step1_control .background .content_form .section2 .sideRight .background{
+    width: 95%;
+    height: auto;
+    float: right;
+}
+.step1_control .background .content_form .section3{
+    width: 95%;
+    height: auto;
+    margin-left: 2.5%;
+    text-align: right;
+}
+.link_term_cond{
+    color: #eb0064;
+    text-decoration: none;
+}
+.step2_control{
+    width: 100%;
+    height: 120vh;
+    background-color: rgb(224, 224, 224);
+    display: block;
+}
+.step2_control >.background{
+    width: 35%;
+    height: auto;
+    background-color: white;
+    margin-left: calc(50% - 18.5%);
+}
+.step2_control .background .button_tengocuenta{
+    width: 80%;
+    margin-left: 15%;
+    text-align: right;
+}
+.step2_control .background >.title{
+    width: 70%;
+    margin-left: 15%;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.step2_control .background .content_form{
+    width: 70%;
+    margin-left: 15%;
+}
+.step2_control .background .content_form .section1{
+    width: 90%;
+    margin-left: 5%;
+}
+.step2_control .background .content_form .section1 .title{
+    font-weight: bold;
+}
+.step2_control .background .content_form .section2{
+    width: 90%;
+    margin-left: 5%;
+}
+.step2_control .background .content_form .section2 .title{
+    font-weight: bold;
+}
+.step2_control .background .content_form .section3{
+    width: 90%;
+    margin-left: 5%;
+    font-size: 12px;
+    text-align: left;
+}
+.step3_control{
+    width: 100%;
+    height: 40vh;
+    background-color: rgb(224, 224, 224);
+    display: block;
+}
+.step3_control >.background{
+    width: 35%;
+    height: auto;
+    background-color: white;
+    margin-left: calc(50% - 18.5%);
+}
+.step3_control .background >.title{
+    width: 70%;
+    margin-left: 15%;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.step3_control .background >.content{
+    width: 70%;
+    margin-left: 15%;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    background-color: transparent;
+}
+.step3_control .background >.content >.text{
+    width: 70%;
+    margin-left: 15%;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    background-color: transparent;
+}
+.step3_control .background >.content >.button{
+    width: 70%;
+    margin-left: 15%;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    background-color: transparent;
+}
+.step1_control_preview{
+    width: 100%;
+    height: 80vh;
+    background-color: rgb(224, 224, 224);
+    display: block;
+}
+.step1_control_preview >.background{
+    width: 40%;
+    height: auto;
+    background-color: white;
+    margin-left: calc(50% - 20%);
+}
+.step1_control_preview .background >.title{
+    width: 70%;
+    margin-left: 15%;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.step1_control_preview .background >.content{
+    width: 90%;
+    margin-left: 5%;
+    font-size: 20px;
+    font-weight: bold;
+}
+.step1_control_preview .background >.content .head{
+    width: 100%;
+    height: 80px;
+    padding-left: 10px;
+    background-color: rgb(229, 237, 248);
+}
+.step1_control_preview .background .content .head .nombrePuesto{
+    width: 100%;
+    font-size: 15px;
+    text-align: left;
+    font-weight: bold;
+    line-height: 7px;
+}
+.step1_control_preview .background .content .head .nombreEmpresa{
+    width: 100%;
+    font-size: 15px;
+    text-align: left;
+    font-weight: bold;
+    color: #000df1;
+    line-height: 7px;
+}
+.step1_control_preview .background .content .datos{
+    width: 100%;
+    font-weight: normal;
+}
+.step1_control_preview .background .content .datos .background .labels{
+    float: left;
+    width: 20%;
+    font-size: 15px;
+    text-align: right;
+    line-height: 10px;
+    font-weight: bold;
+}
+.step1_control_preview .background .content .datos .background .datos{
+    float: left;
+    width: 80%;
+    font-size: 15px;
+    line-height: 10px;
+}
+.step1_control_preview .background .content .descripcion{
+    width: 100%;
+    font-size: 14px;
+    font-weight: normal;
+}
+.step1_control_preview .background .content .legal{
+    width: 100%;
+    font-size: 12px;
+    color: rgb(179, 179, 179);
+    font-weight: normal;
+    font-style: italic;
+}
+.step1_control_preview .background .bar_buttons{
+    text-align: right;
+    padding-right: 10px;
+}
+@media only screen and (max-width: 600px) {
+    .btn_continuar_page{
+        width: 150px;
+    }
+    .step1_control{
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(224, 224, 224);
+        display: block;
+    }
+    .step1_control >.background{
+        width: 100%;
+        height: auto;
+        background-color: white;
+        margin-left: 0%;
+    }
+    .step1_control .background .up_icon{
+        width: 100%;
+        height: 75px;
+        background-color: transparent;
+        font-size: 35px;
+        color: white;
+    }
+    .step1_control .background .up_icon .icon{
+        width: 75px;
+        height: 75px;
+        padding-left: 20px;
+        padding-top: 12px;
+        border-radius: 50%;
+        margin-left: calc(calc(100% / 2) - 37.5px);
+        background-color: rgb(0, 255, 234);
+    }
+    .step1_control .background .title{
+        width: 100%;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .step1_control .background .content_form{
+        width: 100%;
+        height: auto;
+        background-color: transparent;
+    }
+    .step1_control .background .content_form .section2 .sideLeft{
+        float: left;
+        width: 100%;
+    }
+    .step1_control .background .content_form .section2 .sideLeft .background{
+        width: 100%;
+        height: auto;
+    }
+    .step1_control .background .content_form .section2 .sideRight{
+        float: left;
+        width: 100%;
+    }
+    .step1_control .background .content_form .section2 .sideRight .background{
+        width: 100%;
+        height: auto;
+    }
+    .step1_control_preview{
+        width: 100%;
+        height: 80vh;
+        background-color: rgb(224, 224, 224);
+        display: block;
+    }
+    .step1_control_preview >.background{
+        width: 100%;
+        height: auto;
+        background-color: white;
+        margin-left: 0%;
+    }
+    .step1_control_preview .background >.title{
+        width: 100%;
+        margin-left: 0%;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .step1_control_preview .background >.content{
+        width: 100%;
+        margin-left: 0%;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .step1_control_preview .background .content .datos{
+        width: 100%;
+        font-weight: normal;
+    }
+    .step1_control_preview .background .content .datos .background .labels{
+        float: left;
+        width: 30%;
+        font-size: 15px;
+        text-align: right;
+        line-height: 10px;
+        font-weight: bold;
+    }
+    .step1_control_preview .background .content .datos .background .datos{
+        float: left;
+        width: 70%;
+        font-size: 15px;
+        line-height: 10px;
+    }
+    .step1_control_preview .background .bar_buttons{
+        width: 100%;
+        text-align: center;
+    }
+    .step2_control{
+        width: 100%;
+        height: 120vh;
+        background-color: rgb(224, 224, 224);
+        display: block;
+    }
+    .step2_control >.background{
+        width: 100%;
+        height: auto;
+        background-color: white;
+        margin-left: 0%;
+    }
+    .step2_control .background .button_tengocuenta{
+        width: 80%;
+        margin-left: 15%;
+        text-align: right;
+    }
+    .step2_control .background >.title{
+        width: 100%;
+        margin-left: 0%;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .step2_control .background .content_form{
+        width: 100%;
+        margin-left: 0%;
+    }
+    .step3_control{
+        width: 100%;
+        height: 40vh;
+        background-color: rgb(224, 224, 224);
+        display: block;
+    }
+    .step3_control >.background{
+        width: 95%;
+        height: auto;
+        background-color: white;
+        margin-left: 2.5%;
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .step1_control{
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(224, 224, 224);
+        display: block;
+    }
+    .step1_control >.background{
+        width: 100%;
+        height: auto;
+        background-color: white;
+        margin-left: 0%;
+    }
+    .step1_control .background .up_icon{
+        width: 100%;
+        height: 75px;
+        background-color: transparent;
+        font-size: 35px;
+        color: white;
+    }
+    .step1_control .background .up_icon .icon{
+        width: 75px;
+        height: 75px;
+        padding-left: 20px;
+        padding-top: 12px;
+        border-radius: 50%;
+        margin-left: calc(calc(100% / 2) - 37.5px);
+        background-color: rgb(0, 255, 234);
+    }
+    .step1_control .background .title{
+        width: 100%;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .step1_control .background .content_form{
+        width: 100%;
+        height: auto;
+        background-color: transparent;
+    }
+    .step1_control .background .content_form .section2 .sideLeft{
+        float: left;
+        width: 100%;
+    }
+    .step1_control .background .content_form .section2 .sideLeft .background{
+        width: 100%;
+        height: auto;
+    }
+    .step1_control .background .content_form .section2 .sideRight{
+        float: left;
+        width: 100%;
+    }
+    .step1_control .background .content_form .section2 .sideRight .background{
+        width: 100%;
+        height: auto;
+    }
+    .step1_control_preview{
+        width: 100%;
+        height: 80vh;
+        background-color: rgb(224, 224, 224);
+        display: block;
+    }
+    .step1_control_preview >.background{
+        width: 95%;
+        height: auto;
+        background-color: white;
+        margin-left: 2.5%;
+    }
+    .step1_control_preview .background >.title{
+        width: 100%;
+        margin-left: 0%;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .step1_control_preview .background >.content{
+        width: 100%;
+        margin-left: 0%;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .step1_control_preview .background >.content .head{
+        width: 100%;
+        height: 80px;
+        padding-left: 30px;
+        background-color: rgb(229, 237, 248);
+    }
+    .step1_control_preview .background .content .datos{
+        width: 100%;
+        font-weight: normal;
+    }
+    .step1_control_preview .background .content .datos .background .labels{
+        float: left;
+        width: 30%;
+        font-size: 15px;
+        text-align: right;
+        line-height: 10px;
+        font-weight: bold;
+    }
+    .step1_control_preview .background .content .datos .background .datos{
+        float: left;
+        width: 70%;
+        font-size: 15px;
+        line-height: 10px;
+    }
+    .step1_control_preview .background .bar_buttons{
+        text-align: right;
+    }
+    .step2_control{
+        width: 100%;
+        height: 120vh;
+        background-color: rgb(224, 224, 224);
+        display: block;
+    }
+    .step2_control >.background{
+        width: 100%;
+        height: auto;
+        background-color: white;
+        margin-left: 0%;
+    }
+    .step3_control{
+        width: 100%;
+        height: 40vh;
+        background-color: rgb(224, 224, 224);
+        display: block;
+    }
+    .step3_control >.background{
+        width: 95%;
+        height: auto;
+        background-color: white;
+        margin-left: 2.5%;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .step1_control{
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(224, 224, 224);
+        display: block;
+    }
+    .step1_control >.background{
+        width: 90%;
+        height: auto;
+        background-color: white;
+        margin-left: 5%;
+    }
+    .step1_control .background .up_icon{
+        width: 100%;
+        height: 75px;
+        background-color: transparent;
+        font-size: 35px;
+        color: white;
+    }
+    .step1_control .background .up_icon .icon{
+        width: 75px;
+        height: 75px;
+        padding-left: 20px;
+        padding-top: 12px;
+        border-radius: 50%;
+        margin-left: calc(calc(100% / 2) - 37.5px);
+        background-color: rgb(0, 255, 234);
+    }
+    .step1_control .background .title{
+        width: 100%;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .step1_control .background .content_form{
+        width: 100%;
+        height: auto;
+        background-color: transparent;
+    }
+    .step1_control .background .content_form .section2 .sideLeft{
+        float: left;
+        width: 50%;
+    }
+    .step1_control .background .content_form .section2 .sideLeft .background{
+        width: 95%;
+        height: auto;
+        float: left;
+    }
+    .step1_control .background .content_form .section2 .sideRight{
+        float: left;
+        width: 50%;
+    }
+    .step1_control .background .content_form .section2 .sideRight .background{
+        width: 95%;
+        height: auto;
+        float: right;
+    }
+    .step1_control_preview{
+        width: 100%;
+        height: 80vh;
+        background-color: rgb(224, 224, 224);
+        display: block;
+    }
+    .step1_control_preview >.background{
+        width: 90%;
+        height: auto;
+        background-color: white;
+        margin-left: 5%;
+    }
+    .step1_control_preview .background >.title{
+        width: 100%;
+        margin-left: 0%;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .step1_control_preview .background >.content{
+        width: 100%;
+        margin-left: 0%;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .step1_control_preview .background >.content .head{
+        width: 100%;
+        height: 80px;
+        padding-left: 30px;
+        background-color: rgb(229, 237, 248);
+    }
+    .step1_control_preview .background .content .datos{
+        width: 100%;
+        font-weight: normal;
+    }
+    .step1_control_preview .background .content .datos .background .labels{
+        float: left;
+        width: 25%;
+        font-size: 15px;
+        text-align: right;
+        line-height: 10px;
+        font-weight: bold;
+    }
+    .step1_control_preview .background .content .datos .background .datos{
+        float: left;
+        width: 75%;
+        font-size: 15px;
+        line-height: 10px;
+    }
+    .step1_control_preview .background .descripcion{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .step1_control_preview .background .legal{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .step1_control_preview .background .bar_buttons{
+        text-align: right;
+    }
+    .step2_control{
+        width: 100%;
+        height: 120vh;
+        background-color: rgb(224, 224, 224);
+        display: block;
+    }
+    .step2_control >.background{
+        width: 70%;
+        height: auto;
+        background-color: white;
+        margin-left: 15%;
+    }
+    .step3_control{
+        width: 100%;
+        height: 40vh;
+        background-color: rgb(224, 224, 224);
+        display: block;
+    }
+    .step3_control >.background{
+        width: 70%;
+        height: auto;
+        background-color: white;
+        margin-left: 15%;
+    }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+    .step1_control{
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(224, 224, 224);
+        display: block;
+    }
+    .step1_control >.background{
+        width: 70%;
+        height: auto;
+        background-color: white;
+        margin-left: 15%;
+    }
+    .step1_control_preview{
+        width: 100%;
+        height: 80vh;
+        background-color: rgb(224, 224, 224);
+        display: block;
+    }
+    .step1_control_preview >.background{
+        width: 70%;
+        height: auto;
+        background-color: white;
+        margin-left: 15%;
+    }
+    .step1_control_preview .background >.title{
+        width: 100%;
+        margin-left: 0%;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .step1_control_preview .background >.content{
+        width: 100%;
+        margin-left: 0%;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .step1_control_preview .background >.content .head{
+        width: 100%;
+        height: 80px;
+        padding-left: 30px;
+        background-color: rgb(229, 237, 248);
+    }
+    .step1_control_preview .background .content .datos{
+        width: 100%;
+        font-weight: normal;
+    }
+    .step1_control_preview .background .content .datos .background .labels{
+        float: left;
+        width: 25%;
+        font-size: 15px;
+        text-align: right;
+        line-height: 10px;
+        font-weight: bold;
+    }
+    .step1_control_preview .background .content .datos .background .datos{
+        float: left;
+        width: 75%;
+        font-size: 15px;
+        line-height: 10px;
+    }
+    .step1_control_preview .background .descripcion{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .step1_control_preview .background .legal{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .step1_control_preview .background .bar_buttons{
+        text-align: right;
+    }
+    .step2_control{
+        width: 100%;
+        height: 120vh;
+        background-color: rgb(224, 224, 224);
+        display: block;
+    }
+    .step2_control >.background{
+        width: 60%;
+        height: auto;
+        background-color: white;
+        margin-left: 20%;
+    }
+    .step3_control{
+        width: 100%;
+        height: 40vh;
+        background-color: rgb(224, 224, 224);
+        display: block;
+    }
+    .step3_control >.background{
+        width: 60%;
+        height: auto;
+        background-color: white;
+        margin-left: 20%;
+    }
+}
+@media only screen and (min-width: 1440px) and (max-width: 1600px) {
+    .step1_control{
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(224, 224, 224);
+        display: block;
+    }
+    .step1_control >.background{
+        width: 50%;
+        height: auto;
+        background-color: white;
+        margin-left: 25%;
+    }
+    .step1_control_preview{
+        width: 100%;
+        height: 80vh;
+        background-color: rgb(224, 224, 224);
+        display: block;
+    }
+    .step1_control_preview >.background{
+        width: 50%;
+        height: auto;
+        background-color: white;
+        margin-left: 25%;
+    }
+    .step1_control_preview .background >.title{
+        width: 100%;
+        margin-left: 0%;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .step1_control_preview .background >.content{
+        width: 100%;
+        margin-left: 0%;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .step1_control_preview .background >.content .head{
+        width: 100%;
+        height: 80px;
+        padding-left: 30px;
+        background-color: rgb(229, 237, 248);
+    }
+    .step1_control_preview .background .content .datos{
+        width: 100%;
+        font-weight: normal;
+    }
+    .step1_control_preview .background .content .datos .background .labels{
+        float: left;
+        width: 25%;
+        font-size: 15px;
+        text-align: right;
+        line-height: 10px;
+        font-weight: bold;
+    }
+    .step1_control_preview .background .content .datos .background .datos{
+        float: left;
+        width: 75%;
+        font-size: 15px;
+        line-height: 10px;
+    }
+    .step1_control_preview .background .descripcion{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .step1_control_preview .background .legal{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .step1_control_preview .background .bar_buttons{
+        text-align: right;
+    }
+    .step2_control{
+        width: 100%;
+        height: 120vh;
+        background-color: rgb(224, 224, 224);
+        display: block;
+    }
+    .step2_control >.background{
+        width: 50%;
+        height: auto;
+        background-color: white;
+        margin-left: 25%;
+    }
+    .step3_control{
+        width: 100%;
+        height: 40vh;
+        background-color: rgb(224, 224, 224);
+        display: block;
+    }
+    .step3_control >.background{
+        width: 50%;
+        height: auto;
+        background-color: white;
+        margin-left: 25%;
+    }
+}
+@media only screen and (min-width: 1600px) {
+    .step1_control{
+        width: 100%;
+        height: 80vh;
+        background-color: rgb(224, 224, 224);
+        display: block;
+    }
+    .step1_control >.background{
+        width: 50%;
+        height: auto;
+        background-color: white;
+        margin-left: 25%;
+    }
+    .step1_control_preview{
+        width: 100%;
+        height: 80vh;
+        background-color: rgb(224, 224, 224);
+        display: block;
+    }
+    .step1_control_preview >.background{
+        width: 50%;
+        height: auto;
+        background-color: white;
+        margin-left: 25%;
+    }
+    .step2_control{
+        width: 100%;
+        height: 120vh;
+        background-color: rgb(224, 224, 224);
+        display: block;
+    }
+    .step2_control >.background{
+        width: 35%;
+        height: auto;
+        background-color: white;
+        margin-left: calc(50% - 18.5%);
+    }
+    .step3_control{
+        width: 100%;
+        height: 40vh;
+        background-color: rgb(224, 224, 224);
+        display: block;
+    }
+    .step3_control >.background{
+        width: 35%;
+        height: auto;
+        background-color: white;
+        margin-left: calc(50% - 18.5%);
+    }
+}

@@ -1,0 +1,244 @@
+.back_blue{
+    width: 100%;
+    height: 300px;
+    background-color: #000df1;
+}
+@keyframes animBlok{
+    0%{margin-left: 0%;}
+    100%{margin-left: -15%;opacity: 0;}
+}
+.tabsnavbar{
+    width: 100%;
+    height: auto;
+    margin-top: -200px;
+    background-color: transparent;
+}
+.tabsnavbar .background{
+    width: 20%;
+    margin-left: 40%;
+}
+.background .login_control_candidato{
+    width: 100%;
+    height: 500px;
+    background-color: transparent;
+    margin-top: 0px;
+    /*animation: animBlok 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;*/
+}
+.background .login_control_candidato .background{
+    width: 20%;
+    height: 100%;
+    margin-left: 40%;
+    background-color: white;
+    border-radius: 10px;
+    border: solid 5px #eb0064;
+}
+.background .login_control_candidato .background .head{
+    width: 90%;
+    margin-left: 5%;
+}
+.background .login_control_candidato .background .icon_head{
+    width: 50%;
+    margin-left: 25%;
+    background-color: transparent;
+}
+.background .login_control_candidato .background .icon_head img{
+    width: 50%;
+    margin-left: 25%;
+}
+.background .login_control_candidato .background .title{
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+.background .login_control_candidato .background .content_form{
+    width: 90%;
+    margin-left: 5%;
+}
+
+
+.background .login_control_empresa{
+    width: 100%;
+    height: 600px;
+    background-color: transparent;
+    margin-top: 0px;
+    /*animation: animBlok 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;*/
+}
+.background .login_control_empresa .background{
+    width: 20%;
+    height: 100%;
+    margin-left: 40%;
+    background-color: white;
+    border-radius: 10px;
+    border: solid 5px #45d2da;
+}
+.background .login_control_empresa .background .head{
+    width: 90%;
+    margin-left: 5%;
+}
+.background .login_control_empresa .background .icon_head{
+    width: 50%;
+    margin-left: 25%;
+    background-color: transparent;
+}
+.background .login_control_empresa .background .icon_head img{
+    width: 50%;
+    margin-left: 25%;
+}
+.background .login_control_empresa .background .title p:nth-child(1){
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+.background .login_control_empresa .background .content_form{
+    width: 90%;
+    margin-left: 5%;
+}
+@media only screen and (max-width: 600px) {
+    .tabsnavbar{
+        width: 100%;
+        height: auto;
+        margin-top: -200px;
+        background-color: transparent;
+    }
+    .tabsnavbar .background{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .background .login_control_candidato .background{
+        width: 80%;
+        height: 100%;
+        margin-left: 10%;
+        background-color: white;
+        border-radius: 10px;
+        border: solid 5px #eb0064;
+    }
+    .background .login_control_empresa .background{
+        width: 80%;
+        height: 100%;
+        margin-left: 10%;
+        background-color: white;
+        border-radius: 10px;
+        border: solid 5px #45d2da;
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .tabsnavbar{
+        width: 100%;
+        height: auto;
+        margin-top: -200px;
+        background-color: transparent;
+    }
+    .tabsnavbar .background{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .background .login_control_candidato .background{
+        width: 80%;
+        height: 100%;
+        margin-left: 10%;
+        background-color: white;
+        border-radius: 10px;
+        border: solid 5px #eb0064;
+    }
+    .background .login_control_empresa .background{
+        width: 80%;
+        height: 100%;
+        margin-left: 10%;
+        background-color: white;
+        border-radius: 10px;
+        border: solid 5px #45d2da;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .tabsnavbar{
+        width: 100%;
+        height: auto;
+        margin-top: -200px;
+        background-color: transparent;
+    }
+    .tabsnavbar .background{
+        width: 45%;
+        margin-left: 27.5%;
+    }
+    .background .login_control_candidato .background{
+        width: 45%;
+        height: 100%;
+        margin-left: 27.5%;
+        background-color: white;
+        border-radius: 10px;
+        border: solid 5px #eb0064;
+    }
+    .background .login_control_empresa .background{
+        width: 45%;
+        height: 100%;
+        margin-left: 27.5%;
+        background-color: white;
+        border-radius: 10px;
+        border: solid 5px #45d2da;
+    }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+    .tabsnavbar{
+        width: 100%;
+        height: auto;
+        margin-top: -200px;
+        background-color: transparent;
+    }
+    .tabsnavbar .background{
+        width: 35%;
+        margin-left: 32.5%;
+    }
+    .background .login_control_candidato .background{
+        width: 35%;
+        height: 100%;
+        margin-left: 32.5%;
+        background-color: white;
+        border-radius: 10px;
+        border: solid 5px #eb0064;
+    }
+    .background .login_control_empresa .background{
+        width: 35%;
+        height: 100%;
+        margin-left: 32.5%;
+        background-color: white;
+        border-radius: 10px;
+        border: solid 5px #45d2da;
+    }
+}
+@media only screen and (min-width: 1440px) and (max-width: 1600px) {
+    .tabsnavbar{
+        width: 100%;
+        height: auto;
+        margin-top: -200px;
+        background-color: transparent;
+    }
+    .tabsnavbar .background{
+        width: 25%;
+        margin-left: 37.5%;
+    }
+    .background .login_control_candidato .background{
+        width: 25%;
+        height: 100%;
+        margin-left: 37.5%;
+        background-color: white;
+        border-radius: 10px;
+        border: solid 5px #eb0064;
+    }
+    .background .login_control_empresa .background{
+        width: 25%;
+        height: 100%;
+        margin-left: 37.5%;
+        background-color: white;
+        border-radius: 10px;
+        border: solid 5px #45d2da;
+    }
+}
+@media only screen and (min-width: 1600px) {
+    
+}

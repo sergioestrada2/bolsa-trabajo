@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <!-- REFERENCIAS PROPIAS ------------------------------------------------------------------------------------------------------------------------------------------>
+     <link href="css/cssmaster.css" rel="stylesheet">
+     <link href="css/cssanimation.css" rel="stylesheet">
+     <link href="css/cssempleos.css" rel="stylesheet">
+     <link href="css/cssfilter.css" rel="stylesheet">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>    
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <script src="https://kit.fontawesome.com/a59e25dd52.js" crossorigin="anonymous"></script>
+   <!----------------------------------------------------------------------------------------------------------------------------------------------------------------->
+</head>
+<body>
+    <div class="container_page">
+        <div class="background">
+            <div class="head menu-sticky">
+                <div class="menu_sticky_content">
+                    <nav class="navbar fixed-top navbar-light bg-light">
+                        <div class="menu_page">
+                            <nav class="navbar navbar-expand-lg navbar-light bg-light navbar_page">
+                                <div class="container-fluid">
+                                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                  </button>
+                                  <div class="collapse navbar-collapse" id="navbarSupportedContent" style="text-align: left;">
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                        <li class="nav-item iconwork_page">
+                                            <i class="fas fa-briefcase" style="color: rgb(35, 93, 216);font-size: 20px;padding-top: 10px;"></i>
+                                        </li>  
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                                        </li>
+                                        <li class="nav-item bar_btn_mobile">
+                                            <button type="button" class="btn btn-outline-primary btn_crear_cuenta">Crear cuenta</button>
+                                            <button type="button" class="btn btn-outline-primary btn_acceder_mobile">Acceder</button>
+                                        </li>
+                                        <li class="nav-item">
+                                            <button type="button" class="btn btn-outline-primary btn_publica">Publica Gratis</button>
+                                            <a class="nav-link active nav_link_mobile" aria-current="page" href="#">Publica gratis</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Empleos</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Beneficios</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Regístrate</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Soy empresa</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <button type="button" class="btn btn-outline-primary btn_acceder">Acceder</button>
+                                        </li>
+                                        <!--<li class="nav-item">
+                                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                                        </li>-->
+                                    </ul>
+                                  </div>
+                                </div>
+                            </nav>
+                            <div class="menu_logo" style="float: right;padding-top: 12px;position: inherit;">
+                                <img src="recursos/logo.svg" alt="logo" style="position: inherit;">
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="separator_page"></div>
+            <div class="search_control">
+                <div class="background">
+                    <div style="height: 20px;"></div>
+                    <div class="search_input">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="basic-addon1" style="background-color: transparent;border: none;margin-top: 5px;color: rgba(184, 184, 184, 0.822);"><i class="fas fa-search"></i></span>
+                            </div>
+                            <input type="email" class="form-control border-0 input_empleos" id="floatingInput_search" placeholder="¿ Que trabajo buscas ?">
+                            <a class="btn btn-primary border-0" href="#" role="button" style="background-color: rgb(233, 0, 102);"><i class="fas fa-search"></i></a>&nbsp;&nbsp;
+                            <a class="btn btn-primary border-0" href="#" role="button" style="background-color: rgb(233, 0, 102);"><i class="fas fa-filter"></i></a>
+                        </div>
+                    </div>
+                    <div class="resultado_busqueda">
+                        <p><span class="num_res">2,000</span>&nbsp;ofertas de empleo en Perú</p>
+                    </div>
+                </div>
+            </div>
+            <div class="search_filter">
+                <div class="background">
+                    <div style="height: 10px;"></div>
+                    <div class="div_filter">
+                        <div class="select_custom" data-filter="#filter_content_1" data-enabled="true" data-filter-master="" data-filter-selected="no-selected">
+                            <div class="input_readonly"><input id="input_filter_1" type="text" placeholder="Fecha de publicación" data-placeholder="Fecha de publicación" class="input_filter" readonly disabled></div>
+                            <div class="icon icon_anim" style="transform-origin: center center"><i class="fas fa-chevron-down icon_select" data-icon="arrow"></i></div>
+                        </div>
+                    </div>
+                    <div class="div_filter">
+                        <div class="select_custom" data-filter="#filter_content_2" data-enabled="true" data-filter-master="" data-filter-selected="no-selected">
+                            <div class="input_readonly"><input id="input_filter_2" type="text" placeholder="Área" data-placeholder="Área" class="input_filter" readonly disabled></div>
+                            <div class="icon icon_anim" style="transform-origin: center center"><i class="fas fa-chevron-down icon_select" data-icon="arrow"></i></div>
+                        </div>
+                    </div>
+                    <div class="div_filter filter_resp1">
+                        <div class="select_custom" data-filter="#filter_content_3" data-enabled="false" data-filter-master="#filter_content_2" data-filter-selected="no-selected">
+                            <div class="input_readonly"><input id="input_filter_3" type="text" placeholder="Subárea" data-placeholder="Subárea" class="input_filter" readonly disabled></div>
+                            <div class="icon icon_anim" style="transform-origin: center center"><i class="fas fa-chevron-down icon_select" data-icon="arrow"></i></div>
+                        </div>
+                    </div>
+                    <div class="div_filter filter_resp2">
+                        <div class="select_custom" data-filter="#filter_content_4" data-enabled="true" data-filter-master="" data-filter-selected="no-selected">
+                            <div class="input_readonly"><input id="input_filter_4" type="text" placeholder="Provincia" data-placeholder="Provincia" class="input_filter" readonly disabled></div>
+                            <div class="icon icon_anim" style="transform-origin: center center"><i class="fas fa-chevron-down icon_select" data-icon="arrow"></i></div>
+                        </div>
+                    </div>
+                    <div class="div_filter">
+                        <div class="select_custom" data-filter="#filter_content_5" data-enabled="true" data-filter-master="" data-filter-selected="no-selected">
+                            <div class="input_readonly"><input id="input_filter_5" type="text" placeholder="Más filtros" data-placeholder="Más filtros" class="input_filter" readonly disabled></div>
+                            <div class="icon icon_anim" style="transform-origin: center center"><i class="fas fa-chevron-down icon_select" data-icon="arrow"></i></div>
+                        </div>
+                    </div>
+                    <div class="clear_filter">
+                        <div class="icon_clear_filter">
+                            <i class="fas fa-trash-alt"></i>
+                        </div>
+                    </div>
+                    <div style="height: 50px;"></div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="background">
+                    <div class="sideLeft">
+                        <div class="background">
+                            <div style="height: 0px;"></div>
+                            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="card_empleo">
+                                            <div style="height: 10px;"></div>
+                                            <div class="head">
+                                                <div class="logo_empresa">
+                                                    <img src="recursos/empresa_logo.jpg" alt="">
+                                                </div>
+                                                <div class="empresa">
+                                                    <div style="height: 10px;"></div>
+                                                    <p><span class="nombre">NOMBRE EMPRESA</span></p>
+                                                    <p><span class="ubicacion">Lima, Lima</span></p>
+                                                </div>
+                                            </div>
+                                            <div class="empleo">
+                                                <p><span class="empleo_nombre">Nombre empleo</span><span class="empleo_discapacidad">&nbsp;&nbsp;<i class="fas fa-wheelchair"></i></span></p>
+                                            </div>
+                                            <div class="datos">
+                                                <div class="tipo_empleo">
+                                                    <p><span class="tipo_empleo_dato">Full-time</span></p>
+                                                </div>
+                                                <div class="fecha_pub">
+                                                    <span class="fecha_pub_nuevo">NUEVO</span>
+                                                    <span class="fecha_pub_cuando">Publicado Ayer</span>
+                                                </div>
+                                            </div>
+                                            <div class="destacado_yellow"></div>
+                                            <div class="icon_star"></div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="card_empleo">
+                                            <div style="height: 10px;"></div>
+                                            <div class="head">
+                                                <div class="logo_empresa">
+                                                    <img src="recursos/empresa_logo.jpg" alt="">
+                                                </div>
+                                                <div class="empresa">
+                                                    <div style="height: 10px;"></div>
+                                                    <p><span class="nombre">NOMBRE EMPRESA</span></p>
+                                                    <p><span class="ubicacion">Lima, Lima</span></p>
+                                                </div>
+                                            </div>
+                                            <div class="empleo">
+                                                <p><span class="empleo_nombre">Nombre empleo</span><span class="empleo_discapacidad">&nbsp;&nbsp;<i class="fas fa-wheelchair"></i></span></p>
+                                            </div>
+                                            <div class="datos">
+                                                <div class="tipo_empleo">
+                                                    <p><span class="tipo_empleo_dato">Full-time</span></p>
+                                                </div>
+                                                <div class="fecha_pub">
+                                                    <span class="fecha_pub_nuevo">NUEVO</span>
+                                                    <span class="fecha_pub_cuando">Publicado Ayer</span>
+                                                </div>
+                                            </div>
+                                            <div class="destacado_yellow"></div>
+                                            <div class="icon_star"></div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="card_empleo">
+                                            <div style="height: 10px;"></div>
+                                            <div class="head">
+                                                <div class="logo_empresa">
+                                                    <img src="recursos/empresa_logo.jpg" alt="">
+                                                </div>
+                                                <div class="empresa">
+                                                    <div style="height: 10px;"></div>
+                                                    <p><span class="nombre">NOMBRE EMPRESA</span></p>
+                                                    <p><span class="ubicacion">Lima, Lima</span></p>
+                                                </div>
+                                            </div>
+                                            <div class="empleo">
+                                                <p><span class="empleo_nombre">Nombre empleo</span><span class="empleo_discapacidad">&nbsp;&nbsp;<i class="fas fa-wheelchair"></i></span></p>
+                                            </div>
+                                            <div class="datos">
+                                                <div class="tipo_empleo">
+                                                    <p><span class="tipo_empleo_dato">Full-time</span></p>
+                                                </div>
+                                                <div class="fecha_pub">
+                                                    <span class="fecha_pub_nuevo">NUEVO</span>
+                                                    <span class="fecha_pub_cuando">Publicado Ayer</span>
+                                                </div>
+                                            </div>
+                                            <div class="destacado_yellow"></div>
+                                            <div class="icon_star"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev next_prev_page" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev" style="height: 5%;">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next next_prev_page" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next" style="height: 5%;">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                            <div class="control_orden">
+                                <div style="height: 50px;"></div>
+                                <p>Ordenar por:</p>
+                                <div class="tags">
+                                    <div class="tag_page relevantes">Relevantes</div>
+                                    <div class="tag_page_active recientes">Recientes</div>
+                                </div>
+                            </div>
+                            <div class="colum_emppleos">
+                                <div class="background">
+                                    <div class="card_empleo">
+                                        <div style="height: 10px;"></div>
+                                        <div class="head">
+                                            <div class="logo_empresa">
+                                                <img src="recursos/empresa_logo.jpg" alt="">
+                                            </div>
+                                            <div class="empresa">
+                                                <div style="height: 10px;"></div>
+                                                <p><span class="nombre">NOMBRE EMPRESA</span></p>
+                                                <p><span class="ubicacion">Lima, Lima</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="empleo">
+                                            <p><span class="empleo_nombre">Nombre empleo</span><span class="empleo_discapacidad">&nbsp;&nbsp;<i class="fas fa-wheelchair"></i></span></p>
+                                        </div>
+                                        <div class="datos">
+                                            <div class="tipo_empleo">
+                                                <p><span class="tipo_empleo_dato">Full-time</span></p>
+                                            </div>
+                                            <div class="fecha_pub">
+                                                <span class="fecha_pub_nuevo">NUEVO</span>
+                                                <span class="fecha_pub_cuando">Publicado Ayer</span>
+                                            </div>
+                                        </div>
+                                        <div class="destacado_blue"></div>
+                                        <div class="icon_star"></div>
+                                    </div>
+                                    <div style="height: 10px;"></div>
+                                    <div class="card_empleo">
+                                        <div style="height: 10px;"></div>
+                                        <div class="head">
+                                            <div class="logo_empresa">
+                                                <img src="recursos/empresa_logo.jpg" alt="">
+                                            </div>
+                                            <div class="empresa">
+                                                <div style="height: 10px;"></div>
+                                                <p><span class="nombre">NOMBRE EMPRESA</span></p>
+                                                <p><span class="ubicacion">Lima, Lima</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="empleo">
+                                            <p><span class="empleo_nombre">Nombre empleo</span><span class="empleo_discapacidad">&nbsp;&nbsp;<i class="fas fa-wheelchair"></i></span></p>
+                                        </div>
+                                        <div class="datos">
+                                            <div class="tipo_empleo">
+                                                <p><span class="tipo_empleo_dato">Full-time</span></p>
+                                            </div>
+                                            <div class="fecha_pub">
+                                                <span class="fecha_pub_nuevo">NUEVO</span>
+                                                <span class="fecha_pub_cuando">Publicado Ayer</span>
+                                            </div>
+                                        </div>
+                                        <div class="destacado_blue"></div>
+                                        <div class="icon_star"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sideRight">
+                        <div class="background">
+                            <div style="height: 20px;"></div>
+                            <div id="head_fixed" class="head head_fixed">
+                                <div class="head_1">
+                                    <div class="logo_empresa">
+                                        <img src="recursos/empresa_logo.jpg" alt="">
+                                    </div>
+                                    <div class="empresa">
+                                        <div style="height: 10px;"></div>
+                                        <p class="nombre_puesto">nombre empleo</p>
+                                        <p class="nombre_empresa">nombre empresa s.a.</p>
+                                    </div>
+                                </div>
+                                <div class="head_2">
+                                    <div class="aviso_no_datos">
+                                        <p>Esta empresa recibirá tu CV anónimo sin foto, edad, género ni nacionalidad.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <script>
+                                /*var fixmeTop = $('.head_fixed').offset().top;
+                                $(window).scroll(function() {
+                                    var currentScroll = $(window).scrollTop();
+                                    if (currentScroll >= (fixmeTop - 80)) {
+                                        $('.head_fixed').css({
+                                            position: 'fixed',
+                                            top: (fixmeTop - 113),
+                                            width: '50%',
+                                            zIndex: '9999'
+                                        });
+                                    } else {
+                                        $('.head_fixed').css({
+                                            position: 'static',
+                                            width: '100%',
+                                            zIndex: '0'
+                                        });
+                                    }
+                                });*/
+                            </script>
+                            <div style="height: 10px;"></div>
+                            <div class="content">
+                                <div class="tabsnavbar">
+                                    <div class="background">
+                                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                            <li class="nav-item" role="presentation">
+                                              <button class="nav-link active tab_empleo" id="btn_tab_detalle_aviso" data-bs-toggle="tab" data-bs-target="#tab_detalle_aviso" type="button" role="tab" aria-controls="tab_detalle_aviso" aria-selected="true">Detalle del aviso</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                              <button class="nav-link tab_empleo" id="btn_tab_detalle_empresa" data-bs-toggle="tab" data-bs-target="#tab_detalle_empresa" type="button" role="tab" aria-controls="tab_detalle_empresa" aria-selected="false">La empresa</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div style="height: 20px;"></div>
+                                <div class="tab-content" id="myTabContent">
+                                    <div id="tab_detalle_aviso" class="tab-pane fade show active detalle_aviso" role="tabpanel" aria-labelledby="btn_tab_detalle_aviso">
+                                        <div class="sideLeft">
+                                            <div class="content">
+                                                <p>contenido</p>
+                                                <p>contenido</p>
+                                                <p>contenido</p>
+                                                <p>contenido</p>
+                                                <p>contenido</p>
+                                                <p>contenido</p>
+                                                <p>contenido</p>
+                                                <p>contenido</p>
+                                                <p>contenido</p>
+                                                <p>contenido</p>
+                                                <p>contenido</p>
+                                                <p>contenido</p>
+                                                <p>contenido</p>
+                                                <p>contenido</p>
+                                                <p>contenido</p>
+                                                <p>contenido</p>
+                                                <p>contenido</p>
+                                                <p>contenido</p>
+                                                <p>contenido</p>
+                                                <p>contenido</p>
+                                                <p>contenido</p>
+                                            </div>
+                                        </div>
+                                        <div class="sideRight">
+                                            <div class="card_info_empleo">
+                                                <div class="background">
+                                                    <div class="card_info_empleo_rowpink">
+                                                        <div class="icon"><i class="far fa-clock"></i></div>
+                                                        <div class="text">Publicado Hoy</div>
+                                                    </div>
+                                                    <div class="card_info_empleo_rowpink">
+                                                        <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                                                        <div class="text">Lima, Lima, Peru</div>
+                                                    </div>
+                                                    <hr>
+                                                    <div class="card_info_empleo_rowBlue">
+                                                        <div class="icon"><i class="far fa-clock"></i></div>
+                                                        <div class="text">Full-Time</div>
+                                                    </div>
+                                                    <div class="card_info_empleo_rowBlue">
+                                                        <div class="icon"><i class="fas fa-dollar-sign"></i></div>
+                                                        <div class="text">No especificado</div>
+                                                    </div>
+                                                    <div class="card_info_empleo_rowBlue">
+                                                        <div class="icon"><i class="fas fa-cube"></i></div>
+                                                        <div class="text">Logística</div>
+                                                    </div>
+                                                    <div class="card_info_empleo_rowBlue">
+                                                        <div class="icon"><i class="far fa-building"></i></div>
+                                                        <div class="text">Presencial</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="aviso_empleo">
+                                                <p>El contenido de este aviso es propiedad del anunciante. Los requisitos de la posición son definidos y administrados por el anunciante sin que Bumeran sea responsable por ello.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="tab_detalle_empresa" class="tab-pane fade detalle_empresa" role="tabpanel" aria-labelledby="btn_tab_detalle_empresa">
+                                        <div class="sideLeft">
+                                            <div class="content">
+    
+                                            </div>
+                                        </div>
+                                        <div class="sideRight">
+                                            <div class="card_info_empresa">
+                                                <div class="background">
+                                                    <div class="card_info_empresa_row">
+                                                        <p class="label">Industria</p>
+                                                        <div class="text">tecnologia</div>
+                                                    </div>
+                                                    <div class="card_info_empresa_row">
+                                                        <p class="label">Ubicación</p>
+                                                        <div class="text">lima, lima</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="aviso_empleo">
+                                                <p>El contenido de este aviso es propiedad del anunciante. Los requisitos de la posición son definidos y administrados por el anunciante sin que Bumeran sea responsable por ello.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="footer">
+                                <div style="height: 10px;"></div>
+                                <div class="check_actualiza_sueldo">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Actualizar sueldo en Mi CV
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="control_postularme">
+                                    <div class="control_postularme_input">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                              <span class="input-group-text" id="basic-addon1" style="background-color: transparent;border: none;margin-top: 5px;color: rgba(184, 184, 184, 0.822);"><i class="fas fa-dollar-sign"></i></span>
+                                            </div>
+                                            <input type="text" class="form-control border-0 input_sueldo" id="floatingInput_sueldo" placeholder="Ingresa el sueldo neto pretendido" maxlength="11">
+                                        </div>
+                                    </div>
+                                    <div class="control_postularme_button">
+                                        <button type="button" class="btn btn-primary border-0" style="background-color: var(--colorPink);width: 200px;font-weight: bold;font-size: 14px;">Postularme</button>
+                                    </div>
+                                </div>
+                                <script>
+                                    /*$("#floatingInput_sueldo").on({
+                                        "focus": function (event) {
+                                            $(event.target).select();
+                                        },
+                                        "blur": function (event) {
+                                            $(event.target).val(function (index, value ) {
+                                                return value.replace(/\D/g, "")
+                                                            .replace(/([0-9])([0-9]{0})$/, '$1.$2')
+                                                            .replace(/\B(?=(\d{3})+(?!\d)\.?)/g, ",") + '00';
+                                            });
+                                        }
+                                    });*/
+                                </script>
+                            </div>
+                            <div style="height: 20px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="separator_page"></div>
+            <hr class="hr_center">
+            <div class="copyright">
+                <div class="background">
+                    <ul class="list-group list-group-horizontal">
+                        <li class="list-group-item border-0 item_copyright"><a href="">Términos y Condiciones</a></li>
+                        <li class="list-group-item border-0 item_copyright"><a href="">Política de Privacidad</a></li>
+                        <li class="list-group-item border-0 item_copyright"><a href="">Condiciones de contratación</a></li>
+                        <li class="list-group-item border-0 item_copyright"><a href="">Bumeran publicidad</a></li>
+                        <li class="list-group-item border-0 item_copyright"><a href="">Noticias</a></li>
+                        <li class="list-group-item border-0 item_copyright"><a href="">Ofertas de Empleo</a></li>
+                        <li class="list-group-item border-0 item_copyright"><a href="">Libro de reclamaciones</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="filter_content_1" class="filter_content scroll_filter width300">
+        <div class="background">
+            <div class="list_filter" data-input-filter="#input_filter_1">
+                <div class="item_filter" data-category="">
+                    <span class="left">Hoy</span>
+                    <span class="right">2153</span>
+                </div>
+                <div class="item_filter" data-category="">
+                    <span class="left">Ayer</span>
+                    <span class="right">432</span>
+                </div>
+                <div class="item_filter" data-category="">
+                    <span class="left">Menor a 3 dias</span>
+                    <span class="right">43</span>
+                </div>
+                <div class="item_filter" data-category="">
+                    <span class="left">Menor a 4 dias</span>
+                    <span class="right">1433</span>
+                </div>
+                <div class="item_filter" data-category="">
+                    <span class="left">Menor a 5 dias</span>
+                    <span class="right">75</span>
+                </div>
+                <div class="item_filter" data-category="">
+                    <span class="left">Menor a 6 dias</span>
+                    <span class="right">345</span>
+                </div>
+                <div class="item_filter" data-category="">
+                    <span class="left">Menor a 1 semana</span>
+                    <span class="right">764</span>
+                </div>
+                <div class="item_filter" data-category="">
+                    <span class="left">Menor a 15 dias</span>
+                    <span class="right">83</span>
+                </div>
+                <div class="item_filter" data-category="">
+                    <span class="left">Menor a 1 mes</span>
+                    <span class="right">83</span>
+                </div>
+                <div class="item_filter" data-category="">
+                    <span class="left">Menor a 45 dias</span>
+                    <span class="right">83</span>
+                </div>
+                <div class="item_filter" data-category="">
+                    <span class="left">Menor a 2 meses</span>
+                    <span class="right">83</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="filter_content_2" class="filter_content scroll_filter width400">
+        <div class="background">
+            <div class="list_filter"  data-input-filter="#input_filter_2" data-filter-master="#filter_content_2">
+                <div class="item_filter" data-category="">
+                    <span class="left">Comercial, Ventas y Negocio</span>
+                    <span class="right">322</span>
+                </div>
+                <div class="item_filter" data-category="">
+                    <span class="left">Tecnologia, Ventas y Telecomunicaciones</span>
+                    <span class="right">1433</span>
+                </div>
+                <div class="item_filter" data-category="">
+                    <span class="left">Administración, Contabilidad y Finanzas</span>
+                    <span class="right">33</span>
+                </div>
+                <div class="item_filter" data-category="">
+                    <span class="left">Oficios y Otros</span>
+                    <span class="right">223</span>
+                </div>
+                <div class="item_filter" data-category="">
+                    <span class="left">Producción y Manufactura</span>
+                    <span class="right">75</span>
+                </div>
+                <div class="item_filter" data-category="">
+                    <span class="left">Salud, Medicina y Farmacia</span>
+                    <span class="right">89</span>
+                </div>
+                <div class="item_filter" data-category="">
+                    <span class="left">Atención al Cliente, Call Center y Telemarketing</span>
+                    <span class="right">94</span>
+                </div>
+                <div class="item_filter" data-category="">
+                    <span class="left">Abastecimiento y Logística</span>
+                    <span class="right">23</span>
+                </div>
+                <div class="item_filter" data-category="">
+                    <span class="left">Ingeniería</span>
+                    <span class="right">94</span>
+                </div>
+                <div class="item_filter" data-category="">
+                    <span class="left">Menría, Petroleo y Gas</span>
+                    <span class="right">23</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="filter_content_3" class="filter_content scroll_filter width400">
+        <div class="background">
+            <div class="list_filter"  data-input-filter="#input_filter_3">
+                <div class="item_filter" data-category="">
+                    <span class="left">Subárea 1</span>
+                    <span class="right">563</span>
+                </div>
+                <div class="item_filter" data-category="">
+                    <span class="left">Subárea 2</span>
+                    <span class="right">677</span>
+                </div>
+                <div class="item_filter" data-category="">
+                    <span class="left">Subárea 3</span>
+                    <span class="right">264</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="filter_content_4" class="filter_content scroll_filter width300">
+        <div class="background">
+            <div class="list_filter"  data-input-filter="#input_filter_4">
+                <div class="item_filter" data-category="">
+                    <span class="left">Lima</span>
+                    <span class="right">26355</span>
+                </div>
+                <div class="item_filter" data-category="">
+                    <span class="left">Arequipa</span>
+                    <span class="right">4212</span>
+                </div>
+                <div class="item_filter" data-category="">
+                    <span class="left">La Libertad</span>
+                    <span class="right">596</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="filter_content_5" class="filter_content scroll_filter width350">
+        <div class="background">
+            <div class="list_filter"  data-input-filter="#input_filter_5">
+                <!-- FILTER RESPONSIVE ---------------------------->
+                <div class="div_sub_filter sub_filter_resp1">
+                    <div class="sub_select_custom" data-filter="#sub_filter_content_6" data-enabled="false" data-filter-master="#filter_content_2" data-filter-selected="no-selected">
+                        <div class="input_readonly"><input id="sub_input_filter_6" type="text" placeholder="Subárea" data-placeholder="Subárea" class="input_filter sub_input_filter_placeholder" readonly disabled></div>
+                        <div class="icon icon_anim" style="transform-origin: center center"><i class="fas fa-chevron-down icon_select" data-icon="arrow"></i></div>
+                    </div>
+                    <div id="sub_filter_content_6" class="sub_filter_content scroll_filter">
+                        <div class="background">
+                            <div class="list_filter" data-input-filter="#sub_input_filter_6">
+                                <div class="item_filter" data-category="">
+                                    <span class="left">Subárea 1</span>
+                                    <span class="right">563</span>
+                                </div>
+                                <div class="item_filter" data-category="">
+                                    <span class="left">Subárea 2</span>
+                                    <span class="right">677</span>
+                                </div>
+                                <div class="item_filter" data-category="">
+                                    <span class="left">Subárea 3</span>
+                                    <span class="right">264</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="div_sub_filter sub_filter_resp2">
+                    <div class="sub_select_custom" data-filter="#sub_filter_content_5" data-enabled="true" data-filter-master="" data-filter-selected="no-selected">
+                        <div class="input_readonly"><input id="sub_input_filter_5" type="text" placeholder="Provincia" data-placeholder="Provincia" class="input_filter sub_input_filter_placeholder" readonly disabled></div>
+                        <div class="icon icon_anim" style="transform-origin: center center"><i class="fas fa-chevron-down icon_select" data-icon="arrow"></i></div>
+                    </div>
+                    <div id="sub_filter_content_5" class="sub_filter_content scroll_filter">
+                        <div class="background">
+                            <div class="list_filter" data-input-filter="#sub_input_filter_5">
+                                <div class="item_filter" data-category="">
+                                    <span class="left">Lima</span>
+                                    <span class="right">26355</span>
+                                </div>
+                                <div class="item_filter" data-category="">
+                                    <span class="left">Arequipa</span>
+                                    <span class="right">4212</span>
+                                </div>
+                                <div class="item_filter" data-category="">
+                                    <span class="left">La Libertad</span>
+                                    <span class="right">596</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--------------------------------------------------->
+                <div class="div_sub_filter">
+                    <div class="sub_select_custom" data-filter="#sub_filter_content_1" data-enabled="true" data-filter-master="" data-filter-selected="no-selected">
+                        <div class="input_readonly"><input id="sub_input_filter_1" type="text" placeholder="Nivel Laboral" data-placeholder="Nivel Laboral" class="input_filter sub_input_filter_placeholder" readonly disabled></div>
+                        <div class="icon icon_anim" style="transform-origin: center center"><i class="fas fa-chevron-down icon_select" data-icon="arrow"></i></div>
+                    </div>
+                    <div id="sub_filter_content_1" class="sub_filter_content scroll_filter">
+                        <div class="background">
+                            <div class="list_filter" data-input-filter="#sub_input_filter_1">
+                                <div class="item_filter" data-category="">
+                                    <span class="left">Senior / Semi-Senior</span>
+                                    <span class="right">26355</span>
+                                </div>
+                                <div class="item_filter" data-category="">
+                                    <span class="left">Junior</span>
+                                    <span class="right">26355</span>
+                                </div>
+                                <div class="item_filter" data-category="">
+                                    <span class="left">Otros</span>
+                                    <span class="right">26355</span>
+                                </div>
+                                <div class="item_filter" data-category="">
+                                    <span class="left">Jefe / Supervisor / Responsable</span>
+                                    <span class="right">26355</span>
+                                </div>
+                                <div class="item_filter" data-category="">
+                                    <span class="left">Primer Empleo</span>
+                                    <span class="right">26355</span>
+                                </div>
+                                <div class="item_filter" data-category="">
+                                    <span class="left">Gerencia / Alta Gerencia / Dirección</span>
+                                    <span class="right">26355</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="div_sub_filter">
+                    <div class="sub_select_custom" data-filter="#sub_filter_content_2" data-enabled="true" data-filter-master="" data-filter-selected="no-selected">
+                        <div class="input_readonly"><input id="sub_input_filter_2" type="text" placeholder="Tipo de Puesto" data-placeholder="Tipo de Puesto" class="input_filter sub_input_filter_placeholder" readonly disabled></div>
+                        <div class="icon icon_anim" style="transform-origin: center center"><i class="fas fa-chevron-down icon_select" data-icon="arrow"></i></div>
+                    </div>
+                    <div id="sub_filter_content_2" class="sub_filter_content scroll_filter">
+                        <div class="background">
+                            <div class="list_filter" data-input-filter="#sub_input_filter_2">
+                                <div class="item_filter" data-category="">
+                                    <span class="left">Full-time</span>
+                                    <span class="right">26355</span>
+                                </div>
+                                <div class="item_filter" data-category="">
+                                    <span class="left">Part-time</span>
+                                    <span class="right">26355</span>
+                                </div>
+                                <div class="item_filter" data-category="">
+                                    <span class="left">Por Contrato</span>
+                                    <span class="right">26355</span>
+                                </div>
+                                <div class="item_filter" data-category="">
+                                    <span class="left">Pasantia</span>
+                                    <span class="right">26355</span>
+                                </div>
+                                <div class="item_filter" data-category="">
+                                    <span class="left">Por Horas</span>
+                                    <span class="right">26355</span>
+                                </div>
+                                <div class="item_filter" data-category="">
+                                    <span class="left">Temporario</span>
+                                    <span class="right">26355</span>
+                                </div>
+                                <div class="item_filter" data-category="">
+                                    <span class="left">Primer Empleo</span>
+                                    <span class="right">26355</span>
+                                </div>
+                                <div class="item_filter" data-category="">
+                                    <span class="left">Voluntario</span>
+                                    <span class="right">26355</span>
+                                </div>
+                                <div class="item_filter" data-category="">
+                                    <span class="left">Fines de Semana</span>
+                                    <span class="right">26355</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="div_sub_filter">
+                    <div class="sub_select_custom" data-filter="#sub_filter_content_3" data-enabled="true" data-filter-master="" data-filter-selected="no-selected">
+                        <div class="input_readonly"><input id="sub_input_filter_3" type="text" placeholder="Modalidad de Trabajo" data-placeholder="Modalidad de Trabajo" class=" sub_input_filter_placeholder input_filter" readonly disabled><span class="label_new">Nuevo</span></div>
+                        <div class="icon icon_anim" style="transform-origin: center center"><i class="fas fa-chevron-down icon_select" data-icon="arrow"></i></div>
+                    </div>
+                    <div id="sub_filter_content_3" class="sub_filter_content scroll_filter">
+                        <div class="background">
+                            <div class="list_filter" data-input-filter="#sub_input_filter_3">
+                                <div class="item_filter" data-category="">
+                                    <span class="left">Presencial</span>
+                                    <span class="right">26355</span>
+                                </div>
+                                <div class="item_filter" data-category="">
+                                    <span class="left">Desde casa</span>
+                                    <span class="right">26355</span>
+                                </div>
+                                <div class="item_filter" data-category="">
+                                    <span class="left">Presencial y desde casa</span>
+                                    <span class="right">26355</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="div_sub_filter">
+                    <div class="sub_select_custom" data-filter="#sub_filter_content_4" data-enabled="true" data-filter-master="" data-filter-selected="no-selected">
+                        <div class="input_readonly"><input id="sub_input_filter_4" type="text" placeholder="Sueldo Mensual" data-placeholder="Sueldo Mensual" class=" sub_input_filter_placeholder input_filter" readonly disabled></div>
+                        <div class="icon icon_anim" style="transform-origin: center center"><i class="fas fa-chevron-down icon_select" data-icon="arrow"></i></div>
+                    </div>
+                    <div id="sub_filter_content_4" class="sub_filter_content scroll_filter">
+                        <div class="background">
+                            <div class="list_filter" data-input-filter="#sub_input_filter_4">
+                                <div class="item_filter" data-category="">
+                                    <span class="left">Sueldo sin especificar</span>
+                                    <span class="right">26355</span>
+                                </div>
+                                <div class="item_filter" data-category="">
+                                    <span class="left">De S/.1 a S/.33,000</span>
+                                    <span class="right">26355</span>
+                                </div>
+                                <div class="item_filter" data-category="">
+                                    <span class="left">De S/.3,300 a S/.6,600</span>
+                                    <span class="right">26355</span>
+                                </div>
+                                <div class="item_filter" data-category="">
+                                    <span class="left">Mayor a S/.12,500</span>
+                                    <span class="right">26355</span>
+                                </div>
+                                <div class="item_filter" data-category="">
+                                    <span class="left">De S/.6,600 a S/.10,000</span>
+                                    <span class="right">26355</span>
+                                </div>
+                                <div class="item_filter" data-category="">
+                                    <span class="left">De S/.10,000 a S/.12,500</span>
+                                    <span class="right">26355</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(".select_custom").click(function(){
+            var dataenabled = $(this).attr("data-enabled");
+            var datafilterselect = $(this).attr("data-filter-selected");
+            if(dataenabled == "true" && datafilterselect == "no-selected"){
+                $(".filter_content").hide();
+                $(".icon_anim").removeClass("iconAnimate_play");
+                $(this).children(".icon_anim").addClass("iconAnimate_play");
+                
+                $(".select_custom").css("border-color","rgb(190, 189, 189)");
+                $(".select_custom").css("color","black");
+                $(this).css("border-color","var(--colorBlue)");
+                $(this).css("color","var(--colorBlue)");
+                
+                var xleft = $(this).offset().left;
+                var xtop = $(this).offset().top + 35;
+
+                $(".input_filter").removeClass("input_filter_placeholder");
+                $(this).children().eq(0).children().addClass("input_filter_placeholder");
+
+                var datafilter = $(this).attr("data-filter");
+                $(datafilter).css("display","block");
+                $(datafilter).offset({ top: 0, left: 0});
+                $(datafilter).offset({ top: xtop, left: xleft});
+                $(".scroll_filter").scrollTop(0);
+            }
+            else{
+                $(".filter_content").hide();
+                $(".icon_anim").removeClass("iconAnimate_play");
+            }
+            return false;
+        });
+        $(document).ready(function() {
+            $(document).on("click" ,function() {
+                $(".icon_anim").removeClass("iconAnimate_play");
+                $(".filter_content").offset({ top: 0, left: 0});
+                $(".filter_content").hide();
+                $(".scroll_filter").scrollTop(0);
+                $(".select_custom").css("border-color","rgb(190, 189, 189)");
+                $(".select_custom").css("color","black");
+                $(".input_filter").removeClass("input_filter_placeholder");
+
+                $(".sub_filter_content").hide();
+            });
+        });
+        $( window ).resize(function() {
+            $(".icon_anim").removeClass("iconAnimate_play");
+            $(".filter_content").offset({ top: 0, left: 0});
+            $(".filter_content").hide();
+            $(".scroll_filter").scrollTop(0);
+            $(".select_custom").css("border-color","rgb(190, 189, 189)");
+            $(".select_custom").css("color","black");
+            $(".input_filter").removeClass("input_filter_placeholder");
+        });
+        $(".item_filter").click(function(){
+            var datainputfilter = $(this).parent().attr("data-input-filter");
+            var textFilter = $(this).children(".left").html();
+            var datafiltermaster = $(this).parent().attr("data-filter-master");
+            $(datainputfilter).attr("placeholder",textFilter);
+            $(".select_custom").scrollTop(0);
+            $(".scroll_filter").scrollTop(0);
+            $(".select_custom").css("border-color","rgb(190, 189, 189)");
+            $(".select_custom").css("color","black");
+            $(".input_filter").removeClass("input_filter_placeholder");
+            $(".select_custom[data-filter-master='" + datafiltermaster + "']").attr("data-enabled","true");
+            $(".sub_select_custom[data-filter-master='" + datafiltermaster + "']").attr("data-enabled","true");
+            $(datainputfilter).parent().parent().attr("data-filter-selected","selected")
+
+            $(datainputfilter).parent().parent().children().eq(1).children().toggleClass("fas fa-chevron-down icon_select");
+            $(datainputfilter).parent().parent().children().eq(1).children().toggleClass("fas fa-times icon_select");
+            $(datainputfilter).parent().parent().children().eq(1).children().attr("data-icon","close")
+
+
+        });
+        $(".icon_select").click(function(){
+            var icon = $(this).attr("data-icon");
+            if(icon == "close"){
+                $(this).parent().parent().attr("data-filter-selected","no-selected");
+                $(this).toggleClass("fas fa-times icon_select");
+                $(this).toggleClass("fas fa-chevron-down icon_select");
+                $(this).attr("data-icon","arrow");
+                
+                var controlInput =$(this).parent().parent().children().eq(0).children(); 
+                var placeholder = controlInput.attr("data-placeholder");
+                controlInput.attr("placeholder",placeholder);
+
+                var datafiltermaster = $(this).parent().parent().attr("data-filter");
+                $(".select_custom[data-filter-master='" + datafiltermaster + "']").attr("data-enabled","false");
+                $(".select_custom[data-filter-master='" + datafiltermaster + "']").attr("data-filter-selected","no-selected");
+
+                placeholder = $(".select_custom[data-filter-master='" + datafiltermaster + "']").children().eq(0).children().attr("data-placeholder");
+                $(".select_custom[data-filter-master='" + datafiltermaster + "']").children().eq(0).children().attr("placeholder",placeholder);
+
+                $(".select_custom[data-filter-master='" + datafiltermaster + "']").children().eq(1).children().attr("class","fas fa-chevron-down icon_select");
+                $(".select_custom[data-filter-master='" + datafiltermaster + "']").children().eq(1).children().attr("data-icon","arrow");
+                //alert('xx');
+                return false;
+            }
+        });
+        $(".icon_clear_filter").click(function(){
+            //alert('asda');
+            $(".select_custom").attr("data-enabled","false");
+            $(".select_custom[data-filter-master='']").attr("data-enabled","true");
+            $(".select_custom").attr("data-filter-selected","no-selected");
+            $(".filter_content").hide();
+
+            $(".sub_select_custom").attr("data-enabled","false");
+            $(".sub_select_custom[data-filter-master='']").attr("data-enabled","true");
+            $(".sub_select_custom").attr("data-filter-selected","no-selected");
+            $(".sub_filter_content").hide();
+
+            var xCant = $(".input_filter").length;
+            for(i = 0; i <= xCant - 1; i++){
+                var placeholder = $(".input_filter").eq(i).attr("data-placeholder");
+                $(".input_filter").eq(i).attr("placeholder",placeholder)
+            }
+            $(".icon_select").attr("class","fas fa-chevron-down icon_select");
+            $(".icon_select").attr("data-icon","arrow")
+            return false;
+        });
+    </script>
+    <script>
+        $(".sub_select_custom").click(function(){
+            var dataenabled = $(this).attr("data-enabled");
+            var datafilterselect = $(this).attr("data-filter-selected");
+            if(dataenabled == "true" && datafilterselect == "no-selected"){
+                $(".sub_filter_content").hide();
+                $(".icon_anim").removeClass("iconAnimate_play");
+                $(this).children(".icon_anim").addClass("iconAnimate_play");
+
+                var datafilter = $(this).attr("data-filter");
+                $(datafilter).css("display","block");
+            }
+            return false;
+        });
+    </script>
+</body>
+</html>
